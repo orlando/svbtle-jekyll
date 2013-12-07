@@ -6,7 +6,7 @@
   {% else %}
     {{ post.content }}
   {% endif %}
-  {% if page.kudos %}
+  {% if site.data.svbtle.enable_kudos %}
     <script>
       $(function() {
         (new Kudos({name:"kudos_"+ Math.floor(new Date().getTime() * Math.random()), articleId:"{{post.customid}}", articleTitle: "{{post.title}}", articleUrl:"{{post.url}}"})).render($("article#{{post.customid}}"));

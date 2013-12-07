@@ -97,7 +97,7 @@ figure.kudo.activated div.txt {
 }
 
 figure.kudo.completed div.filling{
-  background-image: url(/assets/images/me.png);
+  background-image: url(/assets/images/main.png);
   transition-property: none;
   animation: bounce 1s;
   animation-iteration-count: 1;

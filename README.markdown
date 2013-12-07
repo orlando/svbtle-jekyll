@@ -42,7 +42,7 @@ deploy it to heroku, just follow the instructions in the repo.
 then edit to the `_data/svbtle.yml` file and change the last two lines
 
 ```
-kudos: true
+enable_kudos: true
 kudos_url: http://yourkudosurlhere.com/kudos
 ```
 
