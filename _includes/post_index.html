@@ -1,0 +1,16 @@
+<article class="post" id="{{post.customid}}">
+  <h1><a class="title" href="{{post.url}}">{{ post.title }}</a></h1>
+
+  {% if content %}
+    {{ content }}
+  {% else %}
+    {{ post.content }}
+  {% endif %}
+  {% if page.kudos %}
+    <script>
+      $(function() {
+        (new Kudos({name:"kudos_"+ Math.floor(new Date().getTime() * Math.random()), articleId:"{{post.customid}}", articleTitle: "{{post.title}}", articleUrl:"{{post.url}}"})).render($("article#{{post.customid}}"));
+      });
+    </script>
+  {% endif %}
+</article>

@@ -1,0 +1,18 @@
+---
+subtitle: example subtitle
+profile_url: http://example.com
+profile_name: Example Blog
+website_url: http://example.com
+website_url_text: example
+website_url_about: http://example.com
+website_name: example site name
+email_with_subject: mailto:hello@example.com?subject=hi
+twitter: twitter
+feed_url: http://feedurlhere.com
+typekit_url: //use.typekit.net/ega8emb.js
+ga_account: UA-39156020-1
+ga_domain: svbtlejekyll.herokuapp.com
+
+# Enable kudos widget
+enable_kudos: false
+kudos_url: http://kudosexample.herokuapp.com/kudos

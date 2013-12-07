@@ -1,0 +1,49 @@
+---
+layout: base
+title: Home
+---
+<section id="posts">
+    {% for post in paginator.posts %}
+      {% if forloop.index == 1 %}
+        {% include post_header.html %}
+      {% endif %}
+      {% include post_index.html %}
+    {% endfor %}
+
+  {% if paginator.total_pages > 1 %}
+  <nav id="pagination">
+    <ol>
+      {% if paginator.previous_page > 1 %}
+        {% capture page_url %}page{{ page }}{% endcapture%}
+      {% endif %}
+      {% if paginator.previous_page %}
+      <li>
+        <a href="/{{ page_url }}" title="Go to previous page">
+          &laquo;
+        </a>
+      </li>
+      {% endif %}
+      <li>
+      {% for page in (1..paginator.total_pages) %}
+      <li>
+        {% if page > 1 %}
+          {% capture page_url %}page{{ page }}{% endcapture%}
+        {% endif %}
+        {% if page == paginator.page %}
+          {{ page }}
+        {% else %}
+          <a href="/{{ page_url }}">{{ page }}</a>
+        {% endif %}
+      </li>
+      {% endfor %}
+      {% if paginator.next_page %}
+      <li>
+        <a href="/page{{ paginator.next_page }}" title="Go to next page">
+          &raquo;
+        </a>
+      </li>
+      {% endif %}
+    </ol>
+  </nav>
+  {% endif %}
+</section>

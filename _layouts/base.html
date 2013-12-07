@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]> ><! <![endif]-->
+<html lang="en" class="">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}Svbtle Jekyll</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Orlando Del Aguils Blog">
+    <link rel="canonical" href="http://orlando.delagui.la">
+    <meta property="twitter:creator" content="@odelaguila">
+    <meta property="og:title" content="@odelaguila">
+    <meta property="og:type" content="blog">
+    <meta poperty="og:url" content="http://orlando.delagui.la">
+    <meta property="og:site_name">
+    <meta property="og:fb:app_id">
+    <meta property="og:description" content="Orlando Del Aguila Blog">
+    <link rel="alternate" type="application/rss+xml" href="{{page.feed_url}}"/>
+    <!-- libraries -->
+    <link rel="stylesheet" media="screen" type="text/css" href="/assets/stylesheets/reset.css"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="/assets/stylesheets/styles.css"/>
+    <link rel="stylesheet" media="screen" type="text/css" href="/assets/stylesheets/github.css"/>
+    <script data-cfasync="false" type="text/javascript" src="{{page.typekit_url}}"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    {% if site.data.svbtle.enable_kudos && site.data.svbtle.kudos_url %}
+      <link rel="stylesheet" media="screen" type="text/css" href="/assets/stylesheets/kudos.css"/>
+      <script data-cfasync="false" src="/assets/javascripts/jquery.min.js"></script>
+      <script data-cfasync="false" type="text/javascript" src="/assets/javascripts/kudos.js"></script>
+      <script>
+        $(function() {
+          Kudos.KudoURL = "{{site.data.svbtle.kudos_url}}";
+          Kudos.fetchCount();
+        });
+      </script>
+    {% endif %}
+  </head>
+  <body style="zoom: 1;">
+    <div class="unit">
+      <div class="same-height columns adaptive-250-760">
+        <div id="header" class="column fixed left">
+          <div class="container">
+            <header id="sidebar">
+              <figure class="logo medium">
+                <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_text}}</a>
+              </figure>
+              <h1><a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_url_text}}</a></h1>
+              <h2><a href="{{site.data.svbtle.profile_url}}">{{site.data.svbtle.profile_name}}</a></h2>
+              <h3><p>{{site.data.svbtle.subtitle}}</p></h3>
+              <ul id="user_nav">
+                <li class="website"><a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_name}}</a></li>
+                <li class="link twitter "><a href="http://twitter.com/{{site.data.svbtle.twitter}}">@{{site.data.svbtle.twitter}}</a></li>
+                <li class="link email"><a href="{{site.data.svbtle.email_with_subject}}">say hello</a></li>
+                <li class="link feed"><a href="{{site.data.svbtle.feed_url}}">feed</a></li>
+              </ul>
+            </header>
+          </div>
+        </div>
+        <div id="content" class="column elastic main">
+          <div class="container">
+            <section class="content">
+              {{content}}
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/javascripts/js.js"></script>
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '{{site.data.svbtle.ga_account}}']);
+      _gaq.push(['_setDomainName', '{{site.data.svbtle.ga_domain}}']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </body>
+</html>
