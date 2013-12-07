@@ -10,8 +10,8 @@ email_with_subject: mailto:hello@example.com?subject=hi
 twitter: twitter
 feed_url: http://feedurlhere.com
 typekit_url: //use.typekit.net/ega8emb.js
-ga_account: UA-39156020-1
-ga_domain: svbtlejekyll.herokuapp.com
+ga_account: your-ga-code-here
+ga_domain: svbtlejekyll.example.com
 
 # Enable kudos widget
 enable_kudos: false
