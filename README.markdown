@@ -36,7 +36,7 @@ write content here
 
 ## Kudos Server
 
-If you want to enable the kudos widget in your blog, you need to setup a kudos server [https://github.com/orlando/kudos_server]((https://github.com/orlando/kudos_server). You can
+If you want to enable the kudos widget in your blog, you need to setup a kudos server [https://github.com/orlando/kudos_server](https://github.com/orlando/kudos_server). You can
 deploy it to heroku, just follow the instructions in the repo.
 
 then edit to the `_data/svbtle.yml` file and change the last two lines
