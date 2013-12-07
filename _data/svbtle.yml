@@ -9,7 +9,7 @@ website_name: example site name
 email_with_subject: mailto:hello@example.com?subject=hi
 twitter: twitter
 feed_url: http://feedurlhere.com
-typekit_url: //use.typekit.net/ega8emb.js
+typekit_url: typekiturlhere
 ga_account: your-ga-code-here
 ga_domain: svbtlejekyll.example.com
 
