@@ -4,7 +4,7 @@ A Jekyll blog with Svbtle theme.
 
 ## Generators
 
-Since we need to setup some stuff in the post front matter, there's a post generator to make things easy
+Since we need to setup some stuff in the post front matter, there's a post generator to make things easier
 
 `rake posts:create`
 
