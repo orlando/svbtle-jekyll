@@ -18,7 +18,7 @@ it accepts the following params (order matters)
 
 `rake posts:create "my new shiny post" code 2013-12-07`
 
-this will create a file called `2013-12-07-my-new-shiny-post.markdown` in the `_posts` directory with this following content:
+this will create a file called `2013-12-07-my-new-shiny-post.markdown` in the `_posts` directory with the following content:
 
 ```
 ---
