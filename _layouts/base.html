@@ -37,35 +37,59 @@
     {% endif %}
   </head>
   <body style="zoom: 1;">
-    <div class="unit">
-      <div class="same-height columns adaptive-250-760">
-        <div id="header" class="column fixed left">
-          <div class="container">
-            <header id="sidebar">
-              <figure class="logo medium">
-                <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_text}}</a>
-              </figure>
-              <h1><a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_url_text}}</a></h1>
-              <h2><a href="{{site.data.svbtle.profile_url}}">{{site.data.svbtle.profile_name}}</a></h2>
-              <h3><p>{{site.data.svbtle.subtitle}}</p></h3>
-              <ul id="user_nav">
-                <li class="website"><a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_name}}</a></li>
-                <li class="link twitter "><a href="http://twitter.com/{{site.data.svbtle.twitter}}">@{{site.data.svbtle.twitter}}</a></li>
-                <li class="link email"><a href="{{site.data.svbtle.email_with_subject}}">say hello</a></li>
-                <li class="link feed"><a href="{{site.data.svbtle.feed_url}}">feed</a></li>
-              </ul>
-            </header>
-          </div>
-        </div>
-        <div id="content" class="column elastic main">
-          <div class="container">
-            <section class="content">
-              {{content}}
-            </section>
-          </div>
-        </div>
+    <div class="main-container">
+
+      <header id="main-header">
+        <figure class="avatar">
+          <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_text}}</a>
+        </figure>
+        <h1 class="profile-name">
+          <a href="{{site.data.svbtle.profile_url}}">{{site.data.svbtle.profile_name}}</a>
+        </h1>
+        <h2 class="subtitle">{{site.data.svbtle.subtitle}}</h2>
+        <ul id="profile-links">
+          <li class="website">
+            <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_name}}</a>
+          </li>
+          <li class="twitter">
+            <a href="http://twitter.com/{{site.data.svbtle.twitter}}">@{{site.data.svbtle.twitter}}</a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="posts-container">
+        <section class="posts">
+          {{content}}
+        </section>
       </div>
     </div>
+
+    <nav class="side-nav is-hidden">
+      <div class="top">
+        <ul id="profile-links">
+          <li class="website">
+            <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_name}}</a>
+          </li>
+          <li class="twitter">
+            <a href="http://twitter.com/{{site.data.svbtle.twitter}}">@{{site.data.svbtle.twitter}}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="about">
+        <ul id="about-links">
+          <li class="magazine">
+            <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_name}}</a>
+          </li>
+          <li class="about">
+            <a href="http://twitter.com/{{site.data.svbtle.twitter}}">@{{site.data.svbtle.twitter}}</a>
+          </li>
+          <li class="svbtle-twitter">
+            <a href="http://twitter.com/{{site.data.svbtle.twitter}}">@{{site.data.svbtle.twitter}}</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
     <script src="/assets/javascripts/js.js"></script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
