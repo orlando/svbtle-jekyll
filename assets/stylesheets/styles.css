@@ -118,7 +118,30 @@ figure.avatar a {
 .posts-container {
   position: relative;
   max-width: 550px;
-  top: 25rem
+  top: 17rem;
+  margin: 0 auto;
+}
+
+.post .title {
+  line-height: 43px;
+  font-size: 38px;
+  transition: color 0.3s ease;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.post .title:hover {
+  color: #F40000;
+}
+
+.post p {
+  line-height: 28.5px;
+  font-size: 19px;
+}
+
+.post {
+  color: #373737;
 }
 
 /* Modifiers */
