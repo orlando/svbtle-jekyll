@@ -2,6 +2,9 @@ html,
 body {
   height: 100%;
   width: 100%;
+}
+
+body {
   font-family: proxima-nova, Helvetica, Avenir, Arial, sans-serif;
   color: #909090;
 }
@@ -18,6 +21,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 a:visited {
@@ -35,7 +39,9 @@ figure {
   height: 100px;
   width: 100px;
   float: left;
-  margin-left: -100px;
+  left: -100px;
+  top: -50px;
+  position: absolute;
 }
 
 figure.avatar a {
@@ -46,10 +52,41 @@ figure.avatar a {
 
 .main-header {
   margin: 0 auto;
-  height: 60px;
   position: relative;
   top: 10rem;
   width: 570px;
+}
+
+.profile-name {
+  line-height: 2.8125rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #F40000;
+}
+
+.profile-name:hover {
+  text-decoration: underline;
+}
+
+.profile-name:visited {
+  color: #F40000;
+}
+
+.subtitle {
+  font-size: 1.375rem;
+  line-height: 1.875rem;
+}
+
+.profile-links {
+  line-height: 1.125rem;
+}
+
+.profile-links > li {
+  border-radius: 20px;
+  border: 3px solid #909090;
+  line-height: 2.8125rem; 
+  padding: 5px 14px;
+  transition: background-color 0.5s ease;
 }
 
 /* Posts  */
@@ -64,6 +101,10 @@ figure.avatar a {
 
 .is-hidden {
   display: none;
+}
+
+.is-uppercase {
+  text-transform: uppercase;
 }
 
 .kudo {
