@@ -2,4 +2,70 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-family: proxima-nova, Helvetica, Avenir, Arial, sans-serif;
+  color: #909090;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/* Colors Guide 
+    red:    #F40000
+    gray:   #909090
+*/
+
+figure {
+  background-color: red;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin-left: -100px;
+}
+
+figure.avatar a {
+  background-image: url('https://d1jcp5e5r52ocf.cloudfront.net/meeple.png');
+}
+
+/* Main Header */
+
+.main-header {
+  margin: 0 auto;
+  height: 60px;
+  position: relative;
+  top: 10rem;
+  width: 570px;
+}
+
+/* Posts  */
+
+.posts-container {
+  position: relative;
+  max-width: 550px;
+  top: 25rem
+}
+
+/* Modifiers */
+
+.is-hidden {
+  display: none;
+}
+
+.kudo {
+  display: none;
 }
