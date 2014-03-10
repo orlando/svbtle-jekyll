@@ -117,11 +117,28 @@ figure.avatar a {
 
 /* Posts  */
 
+.posts-container hr {
+  box-sizing: content-box;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+hr {
+  border: solid #f4f3f3;
+  border-width: 5px 0 0;
+  clear: both;
+  margin: 0 auto;
+  width: 50%;
+  height: 1px;
+  border-radius: 5px;
+  max-width: 430px;
+  color: #f4f3f3;
+}
+
 .posts-container {
   display: block;
   position: relative;
   max-width: 550px;
-  /* top: 17rem; */
   margin: 100px auto 0;
 }
 
@@ -132,9 +149,13 @@ figure.avatar a {
   margin: 25px 0 20px;
 }
 
+#posts article {
+  margin-bottom: 100px;
+}
+
 .post .title {
-  line-height: 43px;
-  font-size: 38px;
+  line-height: 27px;
+  font-size: 32px;
   transition: color 0.3s ease;
   font-weight: bold;
   margin-bottom: 20px;
@@ -146,12 +167,47 @@ figure.avatar a {
 }
 
 .post p {
-  line-height: 28.5px;
-  font-size: 19px;
+  line-height: 27px;
+  font-size: 17px;
 }
 
 .post {
   color: #373737;
+}
+
+article:nth-child(2) .title {
+  line-height: 43px;
+  font-size: 38px;
+  transition: color 0.3s ease;
+  font-weight: bold;
+  display: block;
+}
+
+article:nth-child(2) p {
+  line-height: 28.5px;
+  font-size: 19px;
+}
+
+a.read-more {
+  line-height: 27px;
+  font-size: 17px;
+  color: red;
+  font-weight: bold;
+}
+
+a.read-more.button{
+  line-height: 30px;
+  color: white;
+  font-size: 15px;
+  padding: 5px 40px 5px 20px;
+  background-color: red;
+  border-radius: 40px;
+  background-image: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/arrow_right_padded-8dc031e52ae66d541aca2f2d44c6863c.png);
+  background-origin: padding-box;
+  background-position: 100% 10px;
+  background-repeat: no-repeat;
+  background-size: 25px 10px;
+  font-weight: bold;
 }
 
 /* Modifiers */
