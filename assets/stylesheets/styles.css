@@ -39,8 +39,8 @@ figure {
   height: 90px;
   width: 90px;
   float: left;
-  left: -150px;
-  top: -50px;
+  left: 18.5%;
+  top: 45px;
   position: absolute;
 }
 
@@ -61,9 +61,11 @@ figure.avatar a {
 /* Main Header */
 
 .main-header {
+  display: block;
   margin: 0 auto;
-  position: relative;
+  /* position: relative; */
   top: 10rem;
+  padding-top: 90px;
   width: 570px;
 }
 
@@ -116,10 +118,18 @@ figure.avatar a {
 /* Posts  */
 
 .posts-container {
+  display: block;
   position: relative;
   max-width: 550px;
-  top: 17rem;
-  margin: 0 auto;
+  /* top: 17rem; */
+  margin: 100px auto 0;
+}
+
+.posts-container span {
+  color:#F40000;
+  display: block;
+  font-weight: bold;
+  margin: 25px 0 20px;
 }
 
 .post .title {
