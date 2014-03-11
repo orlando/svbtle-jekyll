@@ -27,5 +27,12 @@
     padding-top: 0;
   }
 
-
+  .main-header .profile-links > li {
+    display: block;
+    margin-top: 2px;
+  }
+  
+  .main-header .profile-links > li:first-child {
+    margin-top: 15px;
+  }
 }

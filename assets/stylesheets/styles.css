@@ -160,17 +160,20 @@ a:visited {
 .profile-links > li {
   display: inline-block;
   height: 33px;
-  border-radius: 20px;
-  border: 3px solid rgba(144,144,144, .4);
   line-height: 18px; 
-  padding: 5px 14px;
-  transition: background-color 0.3s ease;
   color: rgba(144,144,144, .4);
   margin-top: 15px;
   font-size: 14px;
 }
 
-.profile-links > li:hover {
+.profile-links span {
+  transition: background-color 0.3s ease;
+  border-radius: 20px;
+  border: 3px solid rgba(144,144,144, .4);
+  padding: 5px 14px;
+}
+
+.profile-links > li:hover span {
   background-color: #F40000;
   color: white;
 }
