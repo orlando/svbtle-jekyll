@@ -55,8 +55,9 @@ figure {
   height: 90px;
   width: 90px;
   float: left;
-  left: 250px;
-  top: 100px;
+  left: -130px;
+  bottom: 70px;
+  /* right: auto; */
   position: absolute;
 }
 
@@ -125,6 +126,7 @@ figure.avatar a {
   margin: 0 auto;
   padding-top: 90px;
   padding-left: 10px;
+  position: relative;
   width: 570px;
 }
 
