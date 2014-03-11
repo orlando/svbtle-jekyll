@@ -127,6 +127,7 @@ a:visited {
   padding-left: 10px;
   position: relative;
   width: 570px;
+  max-width: 100%;
 }
 
 .main-header .profile-links {
@@ -250,14 +251,13 @@ article:nth-child(3)::before,
 p,
 .tag-read-first,
 *::before,
-h1,
 .post > a {
   padding: 0 10px;
 }
 
 .next-article,
 .post {
-  color: #4d4d4d;
+  color: #797979;
 }
 
 .post blockquote {
@@ -295,6 +295,7 @@ article:nth-child(2) .title {
 article:nth-child(2) p {
   line-height: 28.5px;
   font-size: 19px;
+  color: #4d4d4d;
 }
 
 article:nth-child(2) .article-separator{
