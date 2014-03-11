@@ -130,6 +130,10 @@ figure.avatar a {
   width: 570px;
 }
 
+.main-header .profile-links {
+  margin-bottom: 110px;
+}
+
 .profile-name {
   line-height: 2.8125rem;
   font-size: 1.75rem;
