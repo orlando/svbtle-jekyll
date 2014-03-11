@@ -1,5 +1,31 @@
 @media only screen and (max-width: 780px) {
-  .post {
-    background-color: purple;
+  
+  /* LOGO */
+
+  .avatar {
+    float: none;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    margin: 0;
+    margin-bottom: 70px;
+    width: 50px;
+    height: 50px;
   }
+
+  .avatar a {
+    width: 40px;
+    height: 40px;
+    top: 5px;
+  }
+
+  /*HEADER*/
+
+  .main-header {
+    padding-top: 0;
+  }
+
+
 }
