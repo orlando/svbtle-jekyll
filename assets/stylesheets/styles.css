@@ -204,8 +204,7 @@ hr {
 
 .article-separator {
   max-width: none;
-  width: 75vw;
-  margin-left: -5% !important; 
+  width: 50vw;
 }
 
 .posts-container {
@@ -251,13 +250,22 @@ article:nth-child(3)::before,
 p,
 .tag-read-first,
 *::before,
+.post > h1,
 .post > a {
   padding: 0 10px;
+}
+
+.button {
+  margin-left: 10px;
 }
 
 .next-article,
 .post {
   color: #797979;
+}
+
+.title {
+  color: #000;
 }
 
 .post blockquote {
@@ -287,7 +295,7 @@ p,
 article:nth-child(2) .title {
   line-height: 43px;
   font-size: 38px;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   font-weight: bold;
   display: block;
 }
@@ -700,13 +708,15 @@ p.notify {
   font-size: 18px;
   line-height: normal;
   color: #000;
+  padding-left: 10px;
 }
 
 .detail-view figure {
   height: 55px;
   width: 55px;
-  left: 300px;
-  top: 125px;
+  left: -100px;
+  top: 50px;
+  bottom: -20px;
 }
 
 .detail-view figure a {
@@ -715,10 +725,11 @@ p.notify {
   top: 5px;
 }
 
-.anchor-icon {
+.post.detail-view .anchor-icon {
   position: absolute;
   top: 225px;
   left: 2%;
+  border: none;
 }
 
 .anchor-icon .fa, 
@@ -741,7 +752,6 @@ p.notify {
   font-size: 14px;
   line-height: 45px;
   font-weight: bold;
-  padding-left: 4px;
 }
 
 .anchor-icon:hover .fa.fa-anchor, 
@@ -770,12 +780,19 @@ p.notify {
 }
 
 .detail-view .title {
-  border-bottom: 3px solid #eee;
   font-size: 30px;
   line-height: 36px;
 }
 
-.detail-view .title:hover {
+.detail-view .title{
+  color: #393939;
+}
+
+.post.detail-view a {
+  border-bottom: 3px solid #eee;
+}
+
+.detail-view .title:hover a{
   color: #000;
   border-bottom: 3px solid #F40000;
 }
