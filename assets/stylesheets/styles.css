@@ -367,7 +367,7 @@ a.read-more.button{
 }
 
 .side-nav-container:hover .logotype {
-  top: 93%;
+  top: 90vh;
 }
 
 .side-nav-container:hover .side-nav__button {
@@ -463,7 +463,7 @@ a.read-more.button{
   transition-duration: 0.3s;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
-  display: none;
+  z-index: 2;
 }
 
 /* Pagination */
