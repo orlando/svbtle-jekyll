@@ -184,8 +184,7 @@ figure.avatar a {
 
 .posts-container hr {
   box-sizing: content-box;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px auto;
 }
 
 hr {
@@ -202,8 +201,8 @@ hr {
 
 .article-separator {
   max-width: none;
-  width: 50vw;
-  margin-left: -10%;
+  width: 75vw;
+  margin-left: -5% !important; 
 }
 
 .posts-container {
