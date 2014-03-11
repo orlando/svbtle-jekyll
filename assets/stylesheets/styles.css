@@ -247,9 +247,17 @@ article:nth-child(3)::before,
   font-size: 17px;
 }
 
+p,
+.tag-read-first,
+*::before,
+h1,
+.post > a {
+  padding: 0 10px;
+}
+
 .next-article,
 .post {
-  color: #373737;
+  color: #4d4d4d;
 }
 
 .post blockquote {

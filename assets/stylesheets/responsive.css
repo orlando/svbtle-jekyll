@@ -21,7 +21,24 @@
     top: 5px;
   }
 
+  .logotype {
+    display: none;
+  }
+
   /*HEADER*/
+  .profile-name {
+    height: 45px;
+  }
+
+  .profile-name a {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 25px;
+  }
 
   .main-header {
     padding-top: 0;
@@ -34,5 +51,36 @@
   
   .main-header .profile-links > li:first-child {
     margin-top: 15px;
+  }
+
+  /*POST*/
+  article:nth-child(2) .title {
+    font-size: 34px;
+    line-height: 36px;
+  }
+
+  article:nth-child(2) .post {
+    font-size: 17px;
+    line-height: 27px;
+  }
+
+  .post p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .post .title {
+    font-size: 27px;
+    line-height: 32px;
+  }
+
+  .read-more {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .side-nav__button {
+    display: none;
   }
 }
