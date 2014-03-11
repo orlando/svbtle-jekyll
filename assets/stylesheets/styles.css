@@ -203,7 +203,7 @@ hr {
 .posts-container {
   display: block;
   max-width: 550px;
-  margin: 100px auto 0;
+  margin: 30px auto 0;
 }
 
 article:nth-child(3)::before {
@@ -651,6 +651,12 @@ p.notify {
 
 /* Modifiers */
 
+.hide-text {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
 .is-hidden {
   display: none;
 }
@@ -672,6 +678,7 @@ p.notify {
 /*detail view*/
 
 .detail-view .profile-name {
+  border-bottom: 3px solid transparent;
   font-size: 18px;
   line-height: normal;
   color: #000;
@@ -692,7 +699,7 @@ p.notify {
 
 .anchor-icon {
   position: absolute;
-  top: 295px;
+  top: 225px;
   left: 2%;
 }
 
