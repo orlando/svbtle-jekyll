@@ -1,5 +1,9 @@
-<article class="post" id="{{post.customid}}">
-  <h1>{{ post.title }}</h1>
+<article class="post detail-view" id="{{post.customid}}">
+  <h1 class="title">{{ post.title }}</h1>
+  <a href="#" class="anchor-icon">
+    <i class="fa fa-anchor"></i>
+    <time datetime="{{site.time}}">{{ post.date | date: "%B %d, %Y"  }}</time>
+  </a>
   {% if content %}
     {{ content }}
   {% else %}

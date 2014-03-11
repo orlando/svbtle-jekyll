@@ -123,9 +123,8 @@ figure.avatar a {
 .main-header {
   display: block;
   margin: 0 auto;
-  /* position: relative; */
-  /* top: inherit; */
   padding-top: 90px;
+  padding-left: 10px;
   width: 570px;
 }
 
@@ -203,7 +202,6 @@ hr {
 
 .posts-container {
   display: block;
-  position: relative;
   max-width: 550px;
   margin: 100px auto 0;
 }
@@ -227,7 +225,7 @@ article:nth-child(3)::before,
 .post .title {
   line-height: 27px;
   font-size: 32px;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   font-weight: bold;
   margin-bottom: 20px;
   display: block;
@@ -669,4 +667,92 @@ p.notify {
   height: 1px;
   width: 100%;
   background-color: rgba(144, 144, 144, .3);
+}
+
+/*detail view*/
+
+.detail-view .profile-name {
+  font-size: 18px;
+  line-height: normal;
+  color: #000;
+}
+
+.detail-view figure {
+  height: 55px;
+  width: 55px;
+  left: 300px;
+  top: 125px;
+}
+
+.detail-view figure a {
+  height: 45px;
+  width: 45px;
+  top: 5px;
+}
+
+.anchor-icon {
+  position: absolute;
+  top: 295px;
+  left: 2%;
+}
+
+.anchor-icon .fa, 
+.anchor-icon time {
+  transition-property: all;
+  transition-duration: .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
+  -moz-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
+  -ms-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
+  -o-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
+  transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
+}
+
+.anchor-icon .fa {
+  opacity: .15;
+}
+
+.anchor-icon time {
+  opacity: 0;
+  font-size: 14px;
+  line-height: 45px;
+  font-weight: bold;
+  padding-left: 4px;
+}
+
+.anchor-icon:hover .fa.fa-anchor, 
+.anchor-icon:hover time {
+  color: #000;
+  opacity: 1 !important;
+}
+
+.detail-view .profile-name:hover {
+  border-bottom: 3px solid #F40000;
+  color: #F40000;
+  text-decoration: none;
+}
+
+.detail-view .tag-read-first {
+  display: none;
+  visibility: hidden;
+}
+
+.detail-view .post:before {
+  content: none;
+}
+
+.detail-view .title {
+  border-bottom: 3px solid #eee;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.detail-view .title:hover {
+  color: #000;
+  border-bottom: 3px solid #F40000;
+}
+
+.detail-view .title:hover + .anchor-icon .fa-anchor, 
+.detail-view .title:hover + .anchor-icon time {
+  color: #000;
+  opacity: 1 !important;
 }
