@@ -14,11 +14,9 @@ There was a time in the early days of Rails when its evangelists would show off 
 
 <br>
 
-Hey, have you tried Rails? Check this out:
+> Hey, have you tried Rails? Check this out:
 
-<br>
-
-> irb(main):002:0> Time.now - 2.days
+> <code>irb(main):002:0> Time.now - 2.days
 > => 2009-12-26 09:57:02 -0800
 > irb(main):003:0> 2.days.ago
-> => 2009-12-26 09:57:04 -0800
+> => 2009-12-26 09:57:04 -0800</code>
