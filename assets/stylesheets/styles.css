@@ -13,6 +13,22 @@ body {
   box-sizing: border-box;
 }
 
+::-webkit-input-placeholder {
+  color: white;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: white;
+}
+
+:-ms-input-placeholder {  
+  color: white;
+}
+
 .main-container {
   position: relative;
   width: 100%;
@@ -135,6 +151,12 @@ hr {
   color: #f4f3f3;
 }
 
+.article-separator {
+  max-width: none;
+  width: 50vw;
+  margin-left: -10%;
+}
+
 .posts-container {
   display: block;
   position: relative;
@@ -142,11 +164,16 @@ hr {
   margin: 100px auto 0;
 }
 
+article:nth-child(3)::before {
+  content: "MORE BY ***"
+}
+
+article:nth-child(3)::before,
 .posts-container span {
   color:#F40000;
   display: block;
   font-weight: bold;
-  margin: 25px 0 20px;
+  margin: 25px 0 25px;
 }
 
 #posts article {
@@ -188,18 +215,38 @@ article:nth-child(2) p {
   font-size: 19px;
 }
 
+article:nth-child(2) .article-separator{
+  display: none;
+  visibility: hidden;
+}
+
+article:nth-child(2) a.read-more{
+  display: none;
+}
+
+article:nth-child(2) a.read-more.button{
+  display: block;
+}
+
+article a.read-more.button{
+  display: none;
+}
+
 a.read-more {
   line-height: 27px;
   font-size: 17px;
   color: red;
   font-weight: bold;
+  margin-top: 50px;
+  display: block;
+  max-width: 182px;
 }
 
 a.read-more.button{
   line-height: 30px;
   color: white;
   font-size: 15px;
-  padding: 5px 40px 5px 20px;
+  padding: 0px 40px 0px 20px;
   background-color: red;
   border-radius: 40px;
   background-image: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/arrow_right_padded-8dc031e52ae66d541aca2f2d44c6863c.png);
@@ -242,7 +289,10 @@ a.read-more.button{
 }
 
 .side-nav-container:hover .side-nav__button {
-  border: 3px solid #363636;
+  opacity: 1;
+  background-image: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/x_black_2x-6906acfa952d431ed14dbc82c656f72c.png);
+  background-position: 5px 5px;
+  background-size: 10px 10px;
 }
 
 .side-nav .top {
@@ -295,6 +345,8 @@ a.read-more.button{
 
 .side-nav__button:hover {
   opacity: 1;
+  background-image: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/x_black_2x-6906acfa952d431ed14dbc82c656f72c.png);
+  background-position: 5px 8px;
 }
 
 .nav-profile-links {
@@ -328,6 +380,93 @@ a.read-more.button{
   transition-duration: 0.3s;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.165, 0.63, 0.14, 0.82);
+  display: none;
+}
+
+/* Pagination */
+
+nav.pagination {
+  padding: 40px;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  max-width: 650px;
+  margin: 0 auto;
+  color: #363636;
+}
+
+nav.pagination span.next a, 
+nav.pagination span.prev a {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 3px solid;
+}
+
+nav.pagination span.next {
+  display: block;
+  float: right;
+}
+
+/*subscribe*/
+
+.subscribe-container {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  min-width: 0;
+  max-width: 550px;
+  padding-right: 0;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.subscribe-container p.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000;
+  letter-spacing: 0;
+  padding-right: 15px;
+  line-height: 19px;
+  margin-top: 15px;
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+form {
+  display: block;
+}
+
+.subscribe-label {
+  width: 250px;
+  float: left;
+  margin-right: 15px;
+  padding-left: 5px;
+  background-color: black;
+  height: 45px;
+  color: white;
+}
+
+.subscribe-label input {
+  border: none;
+  background-color: transparent;
+  height: 45px;
+  color: white;
+}
+
+p.notify {
+  padding-top: 3px;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 20px;
+  color: #989898;
+  margin-top: 20px;
 }
 
 /* Modifiers */
@@ -342,4 +481,10 @@ a.read-more.button{
 
 .kudo {
   display: none;
+}
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(144, 144, 144, .3);
 }

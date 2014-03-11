@@ -12,5 +12,3 @@ I recently gave a proposal for Rust’s documentation. An important component of
 <hr>
 
 Rust is a systems programming language that focuses on strong compile-time correctness guarantees. It improves upon the ideas other systems languages like C++, D, and Cyclone by providing very strong guarantees and explicit control over the life cycle of memory. Strong memory guarantees make writing correct concurrent Rust code...
-
-<a class="read-more is-uppercase" href="#">Continue →</a>

@@ -15,5 +15,3 @@ Disclaimer: I’m just some random dude. I don’t have any privileged informati
 <br>
 
 Further disclaimer: I work for a company which has received investment...
-
-<a class="read-more button" href="#">Continue reading</a>

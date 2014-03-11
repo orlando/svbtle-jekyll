@@ -22,5 +22,3 @@ Hey, have you tried Rails? Check this out:
 > => 2009-12-26 09:57:02 -0800
 > irb(main):003:0> 2.days.ago
 > => 2009-12-26 09:57:04 -0800
-
-<a class="read-more is-uppercase" href="#">Continue →</a>
