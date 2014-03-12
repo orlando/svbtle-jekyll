@@ -167,12 +167,12 @@ a:visited {
 }
 
 .subtitle {
-  font-size: 1.375rem;
-  line-height: 1.875rem;
+  font-size: 22px;
+  line-height: 30px;
 }
 
 .profile-links {
-  line-height: 1.125rem;
+  line-height: 18px;
 }
 
 .profile-links > li {
@@ -199,7 +199,7 @@ a:visited {
 }
 
 .profile-links > li .a {
-  line-height: 2.8125rem;
+  line-height: 45px;
 }
 
 /* Posts  */
