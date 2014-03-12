@@ -207,6 +207,25 @@ a:visited {
 
 /* Posts  */
 
+.posts-container {
+  display: block;
+  width: 100%;
+}
+
+.posts-container * {
+  margin: 0 auto;
+  max-width: 550px;
+}
+
+.read-more,
+.posts-container .tag {
+  margin: 25px auto;
+}
+
+.read-more {
+  margin-left: 0;
+}
+
 .posts-container hr {
   box-sizing: content-box;
   margin: 50px auto;
@@ -231,14 +250,9 @@ hr {
   width: 35vw;
 }
 
-.posts-container {
-  display: block;
-  max-width: 550px;
-  margin: 30px auto 0;
-}
-
 article:nth-child(3)::before {
-  content: "MORE BY ***"
+  content: "MORE BY ***";
+  margin: 25px auto;
 }
 
 article:nth-child(3)::before,
@@ -246,7 +260,6 @@ article:nth-child(3)::before,
   color:#F40000;
   display: block;
   font-weight: bold;
-  margin: 25px 0 25px;
 }
 
 #posts article {
@@ -370,6 +383,7 @@ a.read-more.button{
   background-repeat: no-repeat;
   background-size: 25px 10px;
   font-weight: bold;
+  margin: 25px 0;
 }
 
 /*side nav*/
@@ -732,10 +746,6 @@ p.notify {
 
 .detail-view .main-header {
   padding-top: 50px;
-}
-
-.detail-view .posts-container {
-  margin-top: 31px;
 }
 
 .detail-view .profile-name {
