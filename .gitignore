@@ -1,5 +1,6 @@
 _site/*
 _site
+.bundle/*
 *.swp
 *.swo
 .rvmrc
