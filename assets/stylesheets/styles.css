@@ -735,6 +735,7 @@ p.notify {
   font-size: 18px;
   line-height: normal;
   color: #000;
+  padding-left: 10px;
   text-decoration: none;
 }
 
@@ -812,7 +813,8 @@ p.notify {
   opacity: 1 !important;
 }
 
-.detail-view .read-first {
+
+.detail-view .tag-read-first {
   display: none;
   visibility: hidden;
 }
