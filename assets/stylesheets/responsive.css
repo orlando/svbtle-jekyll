@@ -26,6 +26,7 @@
   }
 
   /*HEADER*/
+
   .profile-name {
     height: 45px;
   }
@@ -54,6 +55,11 @@
   }
 
   /*POST*/
+  
+  .article-separator {
+    width: 60vw;
+  }
+
   article:nth-child(2) .title {
     font-size: 34px;
     line-height: 36px;
@@ -80,6 +86,11 @@
 }
 
 @media only screen and (max-width: 500px) {
+  
+  .article-separator {
+    width: 80vw;
+  }
+
   .side-nav__button {
     display: none;
   }
