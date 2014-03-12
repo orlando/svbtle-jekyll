@@ -190,6 +190,8 @@ a:visited {
 .profile-links span {
   transition: background-color 0.3s ease;
   border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   border: 3px solid rgba(144,144,144, .4);
   padding: 5px 14px;
 }
@@ -218,6 +220,8 @@ hr {
   width: 80%;
   height: 1px;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   max-width: 430px;
   color: #f4f3f3;
 }
@@ -358,6 +362,8 @@ a.read-more.button{
   padding: 0px 40px 0px 20px;
   background-color: red;
   border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
   background-image: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/arrow_right_padded-8dc031e52ae66d541aca2f2d44c6863c.png);
   background-origin: padding-box;
   background-position: 100% 10px;
@@ -373,6 +379,8 @@ a.read-more.button{
   top: 75px;
   right: -3px;
   -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
   color: #363636;
   font-weight: bold;
   transition-property: all;
@@ -422,7 +430,7 @@ a.read-more.button{
 }
 
 .side-nav-container:hover .logotype {
-  top: 90vh;
+  top: 100%;
 }
 
 .side-nav-container:hover .side-nav__button {
@@ -464,6 +472,8 @@ a.read-more.button{
 .side-nav__button {
   height: 26px;
   width: 26px;
+  border-radius: 100%;
+  border-radius: 100%;
   border-radius: 100%;
   border: 3px solid #000;
   margin: 1rem 0 1rem 70%;

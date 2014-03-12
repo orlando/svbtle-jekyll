@@ -1,3 +1,11 @@
+.kudo {
+  display: none;
+}
+
+.detail-view .kudo {
+  display: block;
+}
+
 figure.kudo {
   color: #000;
   position: fixed;
