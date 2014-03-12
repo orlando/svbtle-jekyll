@@ -287,7 +287,7 @@ p,
   width: auto;
   border-left: 0;
   border-right: 0;
-  margin: 0 auto;
+  margin: 16px auto;
   max-width: 550px;
   overflow: auto;
 }
@@ -703,19 +703,32 @@ p.notify {
 
 /*detail view*/
 
+.detail-view .main-header {
+  padding-top: 50px;
+}
+
 .detail-view .profile-name {
-  border-bottom: 3px solid transparent;
   font-size: 18px;
   line-height: normal;
   color: #000;
   padding-left: 10px;
+  text-decoration: none;
+}
+
+.detail-view .profile-name a {
+  border-bottom: 3px solid transparent;
+}
+
+.detail-view .profile-name:hover  a {
+  border-bottom: 3px solid #F40000;
+  color: #F40000;
 }
 
 .detail-view figure {
   height: 55px;
   width: 55px;
   left: -100px;
-  top: 50px;
+  top: 16px;
   bottom: -20px;
 }
 
@@ -725,10 +738,16 @@ p.notify {
   top: 5px;
 }
 
+.post.detail-view h1.title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
 .post.detail-view .anchor-icon {
   position: absolute;
-  top: 225px;
-  left: 2%;
+  top: 170px;
+  left: 1.5%;
+  padding-left: 0;
   border: none;
 }
 
@@ -758,12 +777,6 @@ p.notify {
 .anchor-icon:hover time {
   color: #000;
   opacity: 1 !important;
-}
-
-.detail-view .profile-name:hover {
-  border-bottom: 3px solid #F40000;
-  color: #F40000;
-  text-decoration: none;
 }
 
 .detail-view .tag-read-first {
