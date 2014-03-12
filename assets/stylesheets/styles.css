@@ -214,7 +214,7 @@ hr {
   border-width: 5px 0 0;
   clear: both;
   margin: 0 auto;
-  width: 50%;
+  width: 80%;
   height: 1px;
   border-radius: 5px;
   max-width: 430px;
@@ -711,10 +711,6 @@ p.notify {
   text-transform: uppercase;
 }
 
-.kudo {
-  display: none;
-}
-
 .line {
   height: 1px;
   width: 100%;
@@ -735,7 +731,6 @@ p.notify {
   font-size: 18px;
   line-height: normal;
   color: #000;
-  padding-left: 10px;
   text-decoration: none;
 }
 
@@ -748,7 +743,7 @@ p.notify {
   color: #F40000;
 }
 
-.detail-view figure {
+.detail-view .avatar {
   height: 55px;
   width: 55px;
   left: -100px;
@@ -756,7 +751,7 @@ p.notify {
   bottom: -20px;
 }
 
-.detail-view figure a {
+.detail-view .avatar a {
   height: 45px;
   width: 45px;
   top: 5px;
