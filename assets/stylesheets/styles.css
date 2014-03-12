@@ -230,8 +230,8 @@ article:nth-child(3)::before,
 }
 
 .post .title {
-  line-height: 27px;
-  font-size: 32px;
+  line-height: 32px;
+  font-size: 27px;
   transition: all 0.3s ease;
   font-weight: bold;
   margin-bottom: 20px;
