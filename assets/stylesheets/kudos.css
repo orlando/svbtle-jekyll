@@ -1,14 +1,23 @@
+.kudo {
+  display: none !important;
+}
+
+.detail-view .kudo {
+  display: block !important;
+}
+
 figure.kudo {
-  position: absolute;
+  color: #000;
+  position: fixed;
   right: 15px;
-  top: 65px;
+  bottom: 70px;
   background-color: #000;
-  width: 58px;
-  height: 58px;
+  width: 48px;
+  height: 48px;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
-  box-shadow: 0 40px 20px #fff;
+  z-index: 10;
 }
 
 figure.kudo a {
@@ -17,14 +26,24 @@ figure.kudo a {
   background-color: #fff;
   display: block;
   margin: 0 auto;
-  top: 5px;
-  width: 46px;
-  height: 46px;
+  width: 36px;
+  height: 36px;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
-  border: 1px solid #000;
   cursor: default;
+}
+
+.detail-view figure.kudo a {
+  position: fixed;
+  bottom: 76px;
+  margin-top: 0;
+  right: 21px;
+  z-index: 9999;
+}
+
+.detail-view figure.kudo a:hover { 
+  color: inherit;
 }
 
 figure.kudo{
@@ -34,8 +53,8 @@ figure.kudo div.filling {
   position: absolute;
   background-color: #000;
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   top: 3px;
   left: 3px;
   background-repeat: no-repeat;
@@ -67,7 +86,7 @@ figure.kudo.activated div.filling{
 figure.kudo div.num {
   position: absolute;
   width: 58px;
-  left: -6px;
+  left: -10px;
   top: 73px;
   top: 53px;
   font-family: "freight-sans-pro",sans-serif;
@@ -81,7 +100,7 @@ figure.kudo div.num {
 figure.kudo div.txt {
   position: absolute;
   width: 58px;
-  left: -6px;
+  left: -10px;
   top: 73px;
   text-align: center;
   text-transform: uppercase;

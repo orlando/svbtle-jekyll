@@ -1,0 +1,103 @@
+@media only screen and (max-width: 780px) {
+  
+  /* LOGO */
+
+  .avatar {
+    float: none;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: 10px;
+    bottom: auto;
+    margin: 0;
+    margin-bottom: 70px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .avatar a {
+    width: 40px;
+    height: 40px;
+    top: 5px;
+  }
+
+  .home_logotype_link,
+  .logotype {
+    display: none !important;
+  }
+
+  /*HEADER*/
+
+  .profile-name {
+    height: 45px;
+    margin-top: 85px;
+  }
+
+  .profile-name a {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .main-header {
+    padding-top: 0;
+  }
+
+  .main-header .profile-links {
+    margin-bottom: 62px;
+  }
+
+  .main-header .profile-links > li {
+    display: block;
+    margin-top: 2px;
+  }
+  
+  .main-header .profile-links > li:first-child {
+    margin-top: 15px;
+  }
+
+  /*POST*/
+  
+  .article-separator {
+    width: 60vw;
+  }
+
+  article:nth-child(2) .title {
+    font-size: 34px;
+    line-height: 36px;
+  }
+
+  article:nth-child(2) .post {
+    font-size: 17px;
+    line-height: 27px;
+  }
+
+  .post p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .post .title {
+    font-size: 27px;
+    line-height: 32px;
+  }
+
+  .read-more {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .article-separator {
+    width: 80vw;
+  }
+
+  .side-nav__button {
+    display: none;
+  }
+}
