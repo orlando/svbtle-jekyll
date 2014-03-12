@@ -80,7 +80,6 @@ a:visited {
 }
 
 .avatar a {
-  display: block;
   position: relative;
   width: 80px;
   height: 80px;
@@ -121,7 +120,6 @@ a:visited {
   font-weight: 900;
   margin: 0;
   padding: 0;
-  display: block;
   text-align: left;
   padding-left: 10px;
   text-transform: uppercase;
@@ -140,7 +138,6 @@ a:visited {
 /* Main Header */
 
 .main-header {
-  display: block;
   margin: 0 auto;
   padding-top: 90px;
   padding-left: 10px;
@@ -208,7 +205,6 @@ a:visited {
 /* Posts  */
 
 .posts-container {
-  display: block;
   width: 100%;
   padding: 0 10px;
 }
@@ -224,6 +220,7 @@ a:visited {
 }
 
 .read-more {
+  display: block;
   margin-left: 0;
 }
 
@@ -273,7 +270,6 @@ article:nth-child(3)::before,
   transition: all 0.3s ease;
   font-weight: bold;
   margin-bottom: 20px;
-  display: block;
 }
 
 .post .title:hover {
@@ -325,7 +321,6 @@ article:nth-child(2) .title {
   font-size: 38px;
   transition: all 0.3s ease;
   font-weight: bold;
-  display: block;
 }
 
 article:nth-child(2) p {
@@ -365,7 +360,7 @@ a.read-more {
   color: red;
   font-weight: bold;
   margin-top: 50px;
-  display: block;
+  ;
   max-width: 182px;
 }
 
@@ -563,7 +558,7 @@ nav.pagination span.next {
 /*subscribe*/
 
 .subscribe-container {
-  display: block;
+  ;
   padding-top: 10px;
   padding-bottom: 30px;
   margin: 0 auto;
@@ -585,10 +580,6 @@ nav.pagination span.next {
   display: inline-block;
   margin-bottom: 0;
   font-size: 16px;
-}
-
-form {
-  display: block;
 }
 
 .subscribe-label {
@@ -633,7 +624,6 @@ p.notify {
 /*footer*/
 
 .foot_logo {
-  display: block;
   float: left;
   width: 150px;
 }
@@ -653,7 +643,6 @@ p.notify {
 }
 
 .foot_userbar {
-  display: block;
   padding-top: 30px;
   padding-bottom: 0;
   margin: 0 auto;
@@ -668,7 +657,6 @@ p.notify {
 .bottom_tagline {
   font-size: 16px;
   line-height: 24px;
-  display: block;
 }
 
 .next-article span,
@@ -711,7 +699,6 @@ p.notify {
 }
 
 .copyright {
-  display: block;
   padding: 10px;
   padding-left: 30px;
   font-size: 10px;
@@ -774,6 +761,7 @@ p.notify {
 }
 
 .detail-view .avatar a {
+  display: block;
   height: 45px;
   width: 45px;
   top: 5px;
@@ -873,7 +861,6 @@ p.notify {
 }
 
 .next-article {
-  display: block;
   padding-top: 20px;
   padding-bottom: 40px;
   margin: 0 auto;
@@ -925,14 +912,12 @@ p.notify {
 }
 
 .next-article__content {
-  display: block;
   font-size: 18px;
   line-height: 27px;
   margin-top: 10px;
 }
 
 .read-next {
-  display: block;
   text-transform: uppercase;
   font-weight: bold;
   color: #000;
