@@ -7,7 +7,7 @@
     position: relative;
     left: auto;
     right: auto;
-    top: auto;
+    top: 10px;
     bottom: auto;
     margin: 0;
     margin-bottom: 70px;
@@ -21,14 +21,16 @@
     top: 5px;
   }
 
+  .home_logotype_link,
   .logotype {
-    display: none;
+    display: none !important;
   }
 
   /*HEADER*/
 
   .profile-name {
     height: 45px;
+    margin-top: 85px;
   }
 
   .profile-name a {
@@ -43,6 +45,10 @@
 
   .main-header {
     padding-top: 0;
+  }
+
+  .main-header .profile-links {
+    margin-bottom: 62px;
   }
 
   .main-header .profile-links > li {

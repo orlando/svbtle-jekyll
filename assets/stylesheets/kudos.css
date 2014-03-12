@@ -1,9 +1,9 @@
 .kudo {
-  display: none;
+  display: none !important;
 }
 
 .detail-view .kudo {
-  display: block;
+  display: block !important;
 }
 
 figure.kudo {
