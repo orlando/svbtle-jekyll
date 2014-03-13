@@ -16,7 +16,7 @@ figure.kudo a:hover div {
 figure.kudo {
   color: #000;
   position: fixed;
-  right: 19px;
+  right: 15px;
   bottom: 50px;
   background-color: #000;
   width: 40px;
@@ -45,7 +45,7 @@ figure.kudo a {
   position: fixed;
   bottom: 54px;
   margin-top: 0;
-  right: 23px;
+  right: 19px;
   z-index: 9999;
 }
 
