@@ -202,7 +202,6 @@ a:visited {
 
 .posts-container * {
   margin: 0 auto;
-  max-width: 550px;
 }
 
 .read-more,
@@ -226,18 +225,21 @@ hr {
   border-width: 5px 0 0;
   clear: both;
   margin: 0 auto;
-  width: 80%;
+  width: 50%;
   height: 1px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  max-width: 430px;
+  -moz-border-radius: 5px;  
   color: #f4f3f3;
 }
 
-.article-separator {
+.post hr {
+  max-width: 430px;
+}
+
+.post .article-separator {
   max-width: none;
-  width: 35vw;
+  width: 60%;
 }
 
 article:nth-child(3)::before {
@@ -260,6 +262,17 @@ article:nth-child(3)::before,
   position: relative;
 }
 
+.post *,
+.read-first,
+*::before {
+  max-width: 550px;
+}
+
+.button,
+.read-more {
+  margin: 0 auto
+}
+
 .post .title {
   line-height: 32px;
   font-size: 27px;
@@ -276,6 +289,7 @@ article:nth-child(3)::before,
 .post p {
   line-height: 27px;
   font-size: 17px;
+  margin: 25px auto;
 }
 
 .next-article,
@@ -310,7 +324,6 @@ article:nth-child(3)::before,
   border-left: 0;
   border-right: 0;
   margin: 16px auto;
-  max-width: 550px;
   overflow: auto;
 }
 
@@ -337,7 +350,7 @@ article:nth-child(2) .read-more{
   display: none;
 }
 
-.read-more.button{
+article:nth-child(2) .read-more.button{
   display: block;
 }
 
@@ -358,8 +371,6 @@ article .read-more.button{
   font-size: 17px;
   color: red;
   font-weight: bold;
-  margin-top: 50px;
-  max-width: 182px;
 }
 
 .read-more.button{
@@ -378,6 +389,7 @@ article .read-more.button{
   background-size: 25px 10px;
   font-weight: bold;
   margin: 25px 0;
+  max-width: 185px;
 }
 
 /*side nav*/
@@ -714,6 +726,7 @@ nav.pagination span.next {
 
 .post.detail-view a:hover {
   color: #F40000;
+  border-color: #F40000;
 }
 
 

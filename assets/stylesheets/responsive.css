@@ -93,10 +93,6 @@
 
 @media only screen and (max-width: 500px) {
   
-  .article-separator {
-    width: 80vw;
-  }
-
   .side-nav__button {
     display: none;
   }

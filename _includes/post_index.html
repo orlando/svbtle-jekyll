@@ -5,7 +5,9 @@
     {{ content }}
   {% else %}
     {{ post.content }}
-    <a class="read-more button" href="#">Continue reading</a>
+    <div class="button-container">
+      <a class="read-more button" href="#">Continue reading</a>
+    </div>
     <a class="read-more is-uppercase" href="#">Continue →</a>
   {% endif %}
   {% if site.data.svbtle.enable_kudos %}
