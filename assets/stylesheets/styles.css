@@ -729,8 +729,8 @@ nav.pagination span.next {
 
 .post.detail-view .anchor-icon {
   position: absolute;
-  top: -8px;
-  left: -70%;
+  top: 0;
+  left: 5px;
   padding-top: 8px;
   padding-left: 0;
   border: none;
