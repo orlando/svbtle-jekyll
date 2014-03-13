@@ -2,6 +2,13 @@
   display: none;
 }
 
+figure.kudo a:hover,
+figure.kudo a:hover div {
+  font-weight: bold;
+  color: #000;
+  border: none;
+}
+
 .detail-view .kudo {
   display: block;
 }
@@ -42,12 +49,7 @@ figure.kudo a {
   z-index: 9999;
 }
 
-figure.kudo a:hover { 
-  color: inherit;
-  border: none;
-}
-
-.kudo:hover .txt {
+.kudo.activated:hover .num {
   display: none;
 }
 
@@ -118,6 +120,10 @@ figure.kudo div.txt {
 figure.kudo.activated div.txt {
   top: 40px;
   font-size: 16px;
+}
+
+figure.kudo.activated div.num {
+  display: none;
 }
 
 figure.kudo.completed div.filling{
