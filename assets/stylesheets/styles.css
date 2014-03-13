@@ -65,8 +65,8 @@ a:visited {
   height: 90px;
   width: 90px;
   float: left;
-  left: -140px;
-  bottom: 70px;
+  left: -100px;
+  bottom: 87px;
   position: absolute;
   margin: 0; /*Remove browser margin*/
 }
