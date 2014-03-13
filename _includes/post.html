@@ -2,7 +2,7 @@
   <h1 class="title"><a href="#">{{ post.title }}</a></h1>
   <a href="#" class="anchor-icon">
     <i class="fa fa-anchor"></i>
-    <time datetime="{{site.time}}">{{ post.date | date: "%B %d, %Y"  }}</time>
+    <time datetime="{{site.time}}">{{ post.date | date: "%b %d, %Y"  }}</time>
   </a>
   {% if content %}
     {{ content }}
