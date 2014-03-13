@@ -10,14 +10,11 @@ body {
 }
 
 * {
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 ::-webkit-input-placeholder {
-  color: white;
-}
-
-:-moz-placeholder { /* Firefox 18- */
   color: white;
 }
 
@@ -92,12 +89,11 @@ a:visited {
   padding-right: 18px;
   padding-bottom: 23px;
   display: inline-block;
+  -webkit-transition-property: all;
   transition-property: all;
+  -webkit-transition-duration: .5s;
   transition-duration: .5s;
   -webkit-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
-  -moz-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
-  -ms-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
-  -o-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
   transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
 }
 
@@ -117,12 +113,11 @@ a:visited {
   text-align: left;
   padding-left: 10px;
   text-transform: uppercase;
+  -webkit-transition-property: all;
   transition-property: all;
+  -webkit-transition-duration: .5s;
   transition-duration: .5s;
   -webkit-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
-  -moz-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
-  -ms-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
-  -o-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
   transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
   opacity: .4;
   z-index: 0;
@@ -179,6 +174,7 @@ a:visited {
 }
 
 .profile-links span {
+  -webkit-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -219,6 +215,7 @@ a:visited {
 }
 
 .posts-container hr {
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
   margin: 50px auto;
 }
@@ -261,6 +258,7 @@ article:nth-child(3)::before,
 .post .title {
   line-height: 32px;
   font-size: 27px;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-weight: bold;
   margin-bottom: 20px;
@@ -313,6 +311,7 @@ article:nth-child(3)::before,
 article:nth-child(2) .title {
   line-height: 43px;
   font-size: 38px;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   font-weight: bold;
 }
@@ -387,14 +386,13 @@ a.read-more.button{
   -o-transform: rotate(90deg);
   color: #363636;
   font-weight: bold;
+  -webkit-transition-property: all;
   transition-property: all;
+  -webkit-transition-duration: .3s;
   transition-duration: .3s;
   font-size: 16px;
   line-height: 24px;
   -webkit-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
-  -moz-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
-  -ms-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
-  -o-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
   transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
   z-index: 2;
   display: none;
@@ -419,12 +417,11 @@ a.read-more.button{
   bottom: 0;
   right: 0;
   width: 5%;
+  -webkit-transition-property: all;
   transition-property: all;
+  -webkit-transition-duration: .5s;
   transition-duration: .5s;
   -webkit-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
-  -moz-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
-  -ms-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
-  -o-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
   transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
   z-index: 1;
 }
@@ -464,6 +461,7 @@ a.read-more.button{
 .side-nav a {
   font-size: 15px;
   line-height: 30px;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -481,6 +479,7 @@ a.read-more.button{
   border-radius: 100%;
   border: 3px solid #000;
   margin: 1rem 0 1rem 70%;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   background-image: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/arrow_down_black-4309ed2aa9ced3b702d2eda70ce014f5.png);
   background-origin: padding-box;
@@ -790,12 +789,11 @@ p.notify {
 
 .anchor-icon .fa, 
 .anchor-icon time {
+  -webkit-transition-property: all;
   transition-property: all;
+  -webkit-transition-duration: .5s;
   transition-duration: .5s;
   -webkit-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
-  -moz-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
-  -ms-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
-  -o-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
   transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
 }
 
@@ -883,6 +881,7 @@ p.notify {
   -moz-animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
   -moz-animation-timing-function: ease-in-out;
+  -webkit-animation-direction: alternate;
   animation-direction: alternate;
   -webkit-animation-direction: alternate;
   -moz-animation-direction: alternate;
@@ -895,7 +894,7 @@ p.notify {
   100% {color: red;}
 }
 
-@-moz-keyframes titlePulse {
+@-webkit-keyframes pulsate {
   0% {color: #000;}
   100% {color: red;}
 }
