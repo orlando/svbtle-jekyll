@@ -402,6 +402,7 @@ article .read-more.button{
 /*side nav*/
 
 .logotype {
+  margin-right: -100px;
   position: fixed;
   top: 75px;
   right: -3px;
@@ -418,7 +419,6 @@ article .read-more.button{
   -webkit-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
   transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
   z-index: 20;
-  display: none;
 }
 
 .logotype .tag {
