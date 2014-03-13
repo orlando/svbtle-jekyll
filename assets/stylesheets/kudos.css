@@ -9,15 +9,15 @@
 figure.kudo {
   color: #000;
   position: fixed;
-  right: 15px;
-  bottom: 70px;
+  right: 19px;
+  bottom: 74px;
   background-color: #000;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
-  z-index: 10;
+  z-index: 50;
 }
 
 figure.kudo a {
@@ -26,8 +26,8 @@ figure.kudo a {
   background-color: #fff;
   display: block;
   margin: 0 auto;
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -36,27 +36,29 @@ figure.kudo a {
 
 .detail-view figure.kudo a {
   position: fixed;
-  bottom: 76px;
+  bottom: 78px;
   margin-top: 0;
-  right: 21px;
+  right: 23px;
   z-index: 9999;
 }
 
 .detail-view figure.kudo a:hover { 
   color: inherit;
+  border: none;
 }
 
 figure.kudo{
   margin:0;
 }
+
 figure.kudo div.filling {
   position: absolute;
   background-color: #000;
   display: block;
-  width: 30px;
-  height: 30px;
-  top: 3px;
-  left: 3px;
+  width: 10px;
+  height: 10px;
+  top: 11px;
+  left: 11px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;
@@ -116,7 +118,7 @@ figure.kudo.activated div.txt {
 }
 
 figure.kudo.completed div.filling{
-  background-image: url(/assets/images/main.png);
+  /*background-image: url(/assets/images/main.png);*/
   transition-property: none;
   animation: bounce 1s;
   animation-iteration-count: 1;
