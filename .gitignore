@@ -1,6 +1,7 @@
 _site/*
 _site
 .bundle/*
+_posts/*
 *.swp
 *.swo
 .rvmrc

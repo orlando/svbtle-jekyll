@@ -32,16 +32,10 @@ body {
 /* Fonts */
 .next-article__title,
 .logotype,
-.profile-name {
-  font-family: freight-sans-pro, proxima-nova, Helvetica;
-}
-
+.profile-name,
+.tag,
 .title {
-  font-family: freight-sans-pro, Helvetica, Avenir, Arial, sans-serif;
-}
-
-.tag {
-  font-family: freight-sans-pro, Helvetica;
+  font-family: freight-sans-pro, proxima-nova, Helvetica;
 }
 
 .side-nav-container {
@@ -828,7 +822,7 @@ p.notify {
   visibility: hidden;
 }
 
-.detail-view .post:before {
+.detail-view .post::before {
   content: none;
 }
 
