@@ -1,16 +1,17 @@
-.kudo {
+.main-view .kudo {
   display: none;
 }
+
+.kudo {
+  display: block;
+}
+
 
 figure.kudo a:hover,
 figure.kudo a:hover div {
   font-weight: bold;
   color: #000;
   border: none;
-}
-
-.detail-view .kudo {
-  display: block;
 }
 
 figure.kudo {
@@ -141,60 +142,4 @@ figure.kudo.completed div.filling{
   -moz-animation: bounce 1s;
   -moz-animation-iteration-count: 1;
   -moz-transform: scale(2.8);
-}
-
-@media only screen and (max-width: 760px), (device-height: 1024px) and (device-width: 768px) and (orientation: portrait), (device-height: 1024px) and (device-width: 768px) and (orientation: landscape){
-  figure.kudo {
-    float: none;
-    left: auto;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    position: relative;
-    display: block;
-    width: 80px;
-    height: 80px;
-    margin-bottom: 50px;
-    margin-top: 30px;
-  }
-
-  figure.kudo a {
-    width: 68px;
-    height: 68px;
-    top: 5px;
-  }
-
-  figure.kudo div.filling {
-    width: 60px;
-    height: 60px;
-    top: 4px;
-    left: 4px;
-  }
-
-  figure.kudo div.num {
-    top: 0;
-    left: 85px;
-    font-size: 30px;
-    line-height: 50px;
-    text-align: left;
-  }
-
-  figure.kudo div.txt {
-    top: 44px;
-    left: 85px;
-    text-align: left;
-    font-size: 14px;
-    line-height: 14px;
-  }
-
-  figure.kudo.activated div.txt {
-    top: 16px;
-    font-size: 30px;
-    line-height: 30px;
-    letter-spacing: 0;
-    text-align: left;
-    font-weight: 700;
-    min-width: 200px;
-    text-transform: none;
-  }
 }

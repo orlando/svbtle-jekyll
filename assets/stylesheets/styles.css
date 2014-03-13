@@ -338,6 +338,10 @@ article::before {
   overflow: auto;
 }
 
+.instapaper {
+  color: #000;
+} 
+
 article:nth-child(2) .title {
   line-height: 43px;
   font-size: 38px;
@@ -881,9 +885,13 @@ nav.pagination span.next {
   100% {color: #F40000;}
 }
 
+.instapaper,
 .next-article__content {
   font-size: 18px;
   line-height: 27px;
+}
+
+.next-article__content {
   margin-top: 10px;
 }
 

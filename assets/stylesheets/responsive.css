@@ -1,4 +1,4 @@
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 760px), (device-height: 1024px) and (device-width: 768px) and (orientation: portrait), (device-height: 1024px) and (device-width: 768px) and (orientation: landscape) {
   
   /* LOGO */
 
@@ -28,22 +28,31 @@
 
   /*HEADER*/
 
-  .profile-name {
+  .main-view .profile-name {
     height: 45px;
     margin-top: 85px;
   }
 
-  .profile-name a {
+  .main-view .profile-name a {
     font-size: 28px;
     line-height: 28px;
   }
+
+  .detail-view .profile-name {
+    height: 28px;
+  }
+
+  .detail-view .profile-name a {
+    font-size: 18px;
+    line-height: normal;
+  }  
 
   .subtitle {
     font-size: 18px;
     line-height: 25px;
   }
 
-  .main-header {
+  .main-view .main-header {
     padding-top: 0;
   }
 
@@ -76,7 +85,7 @@
     line-height: 27px;
   }
 
-  .post p {
+  .detail-view .post p {
     font-size: 17px;
     line-height: 25px;
   }
@@ -86,11 +95,18 @@
     line-height: 32px;
   }
 
+  .detail-view .title {
+    margin-top: 22px;
+  }
+
   .read-more {
     font-size: 16px;
   }
 
-  /*SPECIFIC FOR DETAIL-VIEW*/
+  /* Kudo */
+  .detail-view .kudo {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 500px) {
