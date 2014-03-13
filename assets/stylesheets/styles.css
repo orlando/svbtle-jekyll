@@ -885,6 +885,10 @@ nav.pagination span.next {
   margin-top: 10px;
 }
 
+.next-article__content span {
+  font: 16px/24px;
+}
+
 .read-next {
   text-transform: uppercase;
   font-weight: bold;
