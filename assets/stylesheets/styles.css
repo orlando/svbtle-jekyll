@@ -774,6 +774,7 @@ nav.pagination span.next {
 
 .anchor-icon .fa {
   opacity: .15;
+  visibility: hidden; /*It will be showed just for first article on the blog*/
 }
 
 .anchor-icon time {
