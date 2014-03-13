@@ -2,7 +2,7 @@
   
   /* LOGO */
 
-  .avatar {
+  .main-view .avatar {
     float: none;
     position: relative;
     left: auto;
@@ -15,7 +15,7 @@
     height: 50px;
   }
 
-  .avatar a {
+  .main-view .avatar a {
     width: 40px;
     height: 40px;
     top: 5px;
