@@ -15,15 +15,15 @@ body {
 }
 
 ::-webkit-input-placeholder {
-  color: white;
+  color: #fff;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-  color: white;
+  color: #fff;
 }
 
 :-ms-input-placeholder {  
-  color: white;
+  color: #fff;
 }
 
 /* Fonts */
@@ -186,7 +186,7 @@ a:visited {
 
 .profile-links > li:hover span {
   background-color: #F40000;
-  color: white;
+  color: #fff;
 }
 
 .profile-links > li .a {
@@ -360,7 +360,7 @@ article .read-more.button{
 
 .read-more.button{
   line-height: 30px;
-  color: white;
+  color: #fff;
   font-size: 15px;
   padding: 0 40px 0 20px;
   background-color: red;
@@ -543,72 +543,6 @@ nav.pagination span.prev a {
 nav.pagination span.next {
   display: block;
   float: right;
-}
-
-/*subscribe*/
-
-.subscribe-container {
-  ;
-  padding-top: 10px;
-  padding-bottom: 30px;
-  margin: 0 auto;
-  min-width: 0;
-  max-width: 550px;
-  padding-right: 0;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-
-.subscribe-container p.title {
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #000;
-  letter-spacing: 0;
-  padding-right: 15px;
-  line-height: 19px;
-  margin-top: 15px;
-  display: inline-block;
-  margin-bottom: 0;
-  font-size: 16px;
-}
-
-.subscribe-label {
-  width: 250px;
-  float: left;
-  margin-right: 15px;
-  padding: 10px;
-  background-color: black;
-  height: 45px;
-  color: white;
-}
-
-.subscribe-label input {
-  border: none;
-  background-color: transparent;
-  height: 25px;
-  color: white;
-  margin-left: 10px;
-  padding-left: 10px;
-  border-left: 4px solid #F40000;
-
-  /*animation*/
-  -webkit-animation-name: fPulse;
-  -moz-animation-name: fPulse;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: ease-in-out;
-  -moz-animation-timing-function: ease-in-out;
-}
-
-p.notify {
-  padding-top: 3px;
-  font-size: 14px;
-  line-height: 20px;
-  padding-left: 20px;
-  color: #989898;
-  margin-top: 20px;
 }
 
 /*footer*/
