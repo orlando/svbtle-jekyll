@@ -444,7 +444,7 @@ article .read-more.button{
   top: 0;
   bottom: 0;
   right: 0;
-  width: 2%;
+  width: 0.5%;
   -webkit-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: .5s;
