@@ -886,7 +886,8 @@ nav.pagination span.next {
 }
 
 .next-article__content span {
-  font: 16px/24px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .read-next {
