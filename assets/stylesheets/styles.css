@@ -60,7 +60,7 @@ a:visited {
 */
 
 .avatar {
-  background-color: red;
+  background-color: #F40000;
   border-radius: 50%;
   height: 90px;
   width: 90px;
@@ -244,8 +244,9 @@ hr {
 }
 
 article:nth-child(3)::before {
-  content: "MORE BY ***";
+  content: "MORE BY [USER_NAME]";
   margin: 25px auto;
+  text-transform: uppercase;
 }
 
 article:nth-child(3)::before,
@@ -379,7 +380,7 @@ article .read-more.button{
 .read-more {
   line-height: 27px;
   font-size: 17px;
-  color: red;
+  color: #F40000;
   font-weight: bold;
 }
 
@@ -388,14 +389,11 @@ article .read-more.button{
   color: #fff;
   font-size: 15px;
   padding: 0 40px 0 20px;
-  background-color: red;
   border-radius: 40px;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
-  background-image: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/arrow_right_padded-8dc031e52ae66d541aca2f2d44c6863c.png);
+  background: #F40000 url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/arrow_right_padded-8dc031e52ae66d541aca2f2d44c6863c.png) no-repeat 100% 10;
   background-origin: padding-box;
-  background-position: 100% 10px;
-  background-repeat: no-repeat;
   background-size: 25px 10px;
   font-weight: bold;
   margin: 25px 0;
@@ -466,8 +464,7 @@ article .read-more.button{
 
 .side-nav-container:hover .side-nav__button {
   opacity: 1;
-  background-image: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/x_black_2x-6906acfa952d431ed14dbc82c656f72c.png);
-  background-position: 5px 5px;
+  background: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/x_black_2x-6906acfa952d431ed14dbc82c656f72c.png) no-repeat 5px 5px;
   background-size: 10px 10px;
 }
 
@@ -508,10 +505,8 @@ article .read-more.button{
   margin: 1rem 0 1rem 70%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background-image: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/arrow_down_black-4309ed2aa9ced3b702d2eda70ce014f5.png);
+  background: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/arrow_down_black-4309ed2aa9ced3b702d2eda70ce014f5.png) no-repeat 5px 8px;
   background-origin: padding-box;
-  background-position: 5px 8px;
-  background-repeat: no-repeat;
   background-size: 10px 7px;
   position: fixed;
   top: 0;
@@ -523,8 +518,7 @@ article .read-more.button{
 
 .side-nav__button:hover {
   opacity: 1;
-  background-image: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/x_black_2x-6906acfa952d431ed14dbc82c656f72c.png);
-  background-position: 5px 8px;
+  background: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/x_black_2x-6906acfa952d431ed14dbc82c656f72c.png) 5px 8px;
 }
 
 .nav-profile-links {
@@ -729,7 +723,7 @@ nav.pagination span.next {
 
 .post.detail-view .anchor-icon {
   position: absolute;
-  top: 0;
+  top: -5px;
   left: 5px;
   padding-top: 8px;
   padding-left: 0;
@@ -850,17 +844,17 @@ nav.pagination span.next {
 
 @-webkit-keyframes titlePulse {
   0% {color: #000;}
-  100% {color: red;}
+  100% {color: #F40000;}
 }
 
 @-webkit-keyframes pulsate {
   0% {color: #000;}
-  100% {color: red;}
+  100% {color: #F40000;}
 }
 
 @keyframes pulsate {
   0% {color: #000;}
-  100% {color: red;}
+  100% {color: #F40000;}
 }
 
 .next-article__content {
