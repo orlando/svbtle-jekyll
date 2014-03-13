@@ -71,6 +71,7 @@ a:visited {
 }
 
 .avatar a {
+  display: block;
   position: relative;
   width: 80px;
   height: 80px;
@@ -298,6 +299,7 @@ article:nth-child(3)::before,
   border: 1px solid rgba(144, 144, 144, .3);
   display: block;
   font-size: 13px;
+  font-family: monospace;
   margin-right: 0;
   padding: 10px 0;
   width: auto;
@@ -327,41 +329,40 @@ article:nth-child(2) .article-separator{
   visibility: hidden;
 }
 
-article:nth-child(2) a.read-more{
+article:nth-child(2) .read-more{
   display: none;
 }
 
-article:nth-child(2) a.read-more.button{
+.read-more.button{
   display: block;
 }
 
-article a.read-more.button{
+article .read-more.button{
   display: none;
 }
 
-#posts .post:last-child{
-  margin-bottom: 0px;
+#posts .post:last-child{ /*That specifycity allows to place the margin*/
+  margin-bottom: 0;
 }
 
-#posts .post:last-child .article-separator{
+.post:last-child .article-separator{
   margin-bottom: 15px;
 }
 
-a.read-more {
+.read-more {
   line-height: 27px;
   font-size: 17px;
   color: red;
   font-weight: bold;
   margin-top: 50px;
-  ;
   max-width: 182px;
 }
 
-a.read-more.button{
+.read-more.button{
   line-height: 30px;
   color: white;
   font-size: 15px;
-  padding: 0px 40px 0px 20px;
+  padding: 0 40px 0 20px;
   background-color: red;
   border-radius: 40px;
   -webkit-border-radius: 40px;
@@ -394,7 +395,7 @@ a.read-more.button{
   line-height: 24px;
   -webkit-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
   transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
-  z-index: 2;
+  z-index: 20;
   display: none;
 }
 
@@ -423,7 +424,7 @@ a.read-more.button{
   transition-duration: .5s;
   -webkit-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
   transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
-  z-index: 1;
+  z-index: 10;
 }
 
 .side-nav-container:hover {
@@ -445,7 +446,7 @@ a.read-more.button{
   margin-top: 55px;
 }
 
-.side-nav span {
+.side-nav .tag {
   font-weight: bold;
   color: #363636;
 }
@@ -475,8 +476,6 @@ a.read-more.button{
   height: 26px;
   width: 26px;
   border-radius: 100%;
-  border-radius: 100%;
-  border-radius: 100%;
   border: 3px solid #000;
   margin: 1rem 0 1rem 70%;
   -webkit-transition: all 0.3s ease;
@@ -490,7 +489,7 @@ a.read-more.button{
   top: 0;
   right: 0;
   margin-right: 15px;
-  z-index: 1;
+  z-index: 10;
   opacity: .2;
 }
 
@@ -522,9 +521,7 @@ a.read-more.button{
 /* Pagination */
 
 nav.pagination {
-  padding: 40px;
-  padding-top: 20px;
-  padding-bottom: 100px;
+  padding: 20px 40px 100px;
   max-width: 650px;
   margin: 0 auto;
   color: #363636;
@@ -535,12 +532,12 @@ nav.pagination span.prev a {
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  border-radius: 30px;
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
+  border-radius: 30px;
   font-weight: 700;
   text-transform: uppercase;
-  border: 3px solid;
+  border: 3px solid rgb(54, 54, 54);
 }
 
 nav.pagination span.next {
@@ -648,6 +645,7 @@ p.notify {
 }
 
 .bottom_tagline {
+  display: block;
   font-size: 16px;
   line-height: 24px;
 }
@@ -698,7 +696,7 @@ p.notify {
   color: #e5e5e5;
   border-top: 1px solid #f8f8f8;
   border-bottom: 24px solid #F40000;
-  z-index: 2;
+  z-index: 20;
 }
 
 /* Modifiers */
@@ -754,7 +752,6 @@ p.notify {
 }
 
 .detail-view .avatar a {
-  display: block;
   height: 45px;
   width: 45px;
   top: 5px;
