@@ -5,7 +5,7 @@ body {
 }
 
 body {
-  font-family: proxima-nova, Helvetica, Avenir, Arial, sans-serif;
+  font-family: Raleway, Helvetica, Avenir, Arial, sans-serif;
   color: #909090;
 }
 
@@ -32,11 +32,11 @@ body {
 .profile-name,
 .tag,
 .title {
-  font-family: freight-sans-pro, proxima-nova, Helvetica;
+  font-family: freight-sans-pro, Raleway, Helvetica;
 }
 
 .side-nav-container {
-  font-family: proxima-nova, Helvetica;
+  font-family: Raleway, Helvetica;
 }
 
 .main-container {
