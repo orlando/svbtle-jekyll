@@ -256,6 +256,10 @@ article:nth-child(3)::before,
   margin-bottom: 100px;
 }
 
+.post {
+  position: relative;
+}
+
 .post .title {
   line-height: 32px;
   font-size: 27px;
@@ -562,8 +566,7 @@ nav.pagination span.next {
   font-size: 18px;
   line-height: 20px;
   padding-left: 10px;
-  margin: 30px;
-  margin-top: 40px;
+  margin: 40px 30px 30px;
 }
 
 .foot_userbar {
@@ -616,7 +619,7 @@ nav.pagination span.next {
   font-size: 18px;
 }
 
-.linkout.contact {
+.foot_userbar .linkout:last-child {
   float: right;
   padding-right: 40px;
   margin-left: 0;
@@ -702,8 +705,8 @@ nav.pagination span.next {
 
 .post.detail-view .anchor-icon {
   position: absolute;
-  top: 170px;
-  left: .6%;
+  top: -8px;
+  left: -70%;
   padding-top: 8px;
   padding-left: 0;
   border: none;
@@ -742,7 +745,7 @@ nav.pagination span.next {
 .anchor-icon:hover .fa.fa-anchor, 
 .anchor-icon:hover time {
   color: #000;
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 
@@ -780,7 +783,7 @@ nav.pagination span.next {
 .detail-view .title:hover + .anchor-icon .fa-anchor, 
 .detail-view .title:hover + .anchor-icon time {
   color: #000;
-  opacity: 1 !important;
+  opacity: 1;
 }
 
 .next-article {
