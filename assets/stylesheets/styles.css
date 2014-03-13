@@ -197,7 +197,6 @@ a:visited {
 
 .posts-container {
   width: 100%;
-  padding: 0 10px;
 }
 
 .posts-container * {
@@ -689,6 +688,22 @@ nav.pagination span.next {
   text-decoration: none;
 }
 
+.post.detail-view pre {
+  background-color: rgb(248, 248, 248);
+  border-top: 1px solid rgba(144, 144, 144, .3);
+  border-bottom: 1px solid rgba(144, 144, 144, .3);
+  margin: 0;
+  max-width: none;
+  width: 100%;
+  white-space: pre-line;
+}
+
+.post.detail-view code {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
 .detail-view .profile-name a {
   border-bottom: 3px solid transparent;
 }
@@ -716,9 +731,16 @@ nav.pagination span.next {
   margin-top: 8px;
 }
 
-.post.detail-view h1.title {
-  font-size: 30px;
-  line-height: 36px;
+.detail-view code {
+  line-height: normal;
+}
+
+.first-post.post.detail-view h1.title {
+  font: 30px/36px;
+}
+
+.detail-view .title {
+  font: 38px/43px;
 }
 
 .post.detail-view .anchor-icon {

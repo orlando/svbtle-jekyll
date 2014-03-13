@@ -89,6 +89,8 @@
   .read-more {
     font-size: 16px;
   }
+
+  /*SPECIFIC FOR DETAIL-VIEW*/
 }
 
 @media only screen and (max-width: 500px) {
