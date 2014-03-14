@@ -25,6 +25,11 @@
   z-index: 0;
 }
 
+.kudo.hide-deep {
+  bottom: -100px !important;
+  z-index: 0; 
+}
+
 .kudo a {
   display: block;
   position: relative;

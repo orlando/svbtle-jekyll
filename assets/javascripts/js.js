@@ -39,7 +39,7 @@ $(document).ready(function () {
             buttonNavMobile = buttonNav.filter('.on-mobile'),
             scrollTop = $(window).scrollTop(),
             windowHeight = $(window).height(),
-            kudoSide = $('.kudo'),
+            kudoSide = $('.kudo').last(),
             kudoBottom = $('.group'), //kudo-bottom
             kudoBottomPosition = false;
 
@@ -62,9 +62,9 @@ $(document).ready(function () {
         }
 
         if (kudoBottomPosition !== false && ( scrollTop + windowHeight > kudoBottomPosition)) {
-            kudoSide.addClass('hide');
+            kudoSide.addClass('hide-deep');
         } else {
-            kudoSide.removeClass('hide');   
+            kudoSide.removeClass('hide-deep');   
         }
     });
 
