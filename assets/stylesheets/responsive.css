@@ -158,8 +158,8 @@
 
   /*POST*/
 
-  .posts-container,
-  .post.detail-view {
+  .read-first,
+  .post {
     padding: 0 10px;
   }
 
