@@ -115,9 +115,61 @@
   }
 }
 
+@media only screen and (max-width: 665px) {
+  
+  /*HEADER*/
+  .detail-view .main-header {
+    padding-top: 1.6%; /*Trying to solve the margin that came on IPad*/
+  }
+
+  /* LOGO */
+  .detail-view .avatar {
+    float: none;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: 0;
+    bottom: auto;
+    margin: 0;
+    margin-bottom: 70px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .detail-view .avatar a {
+    width: 40px;
+    height: 40px;
+    top: 5px;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   
-  .side-nav__button {
+  h1.mlogotype {
+    top: 20px
+  }
+
+  /*side-nav*/
+
+
+  /*POST*/
+
+  .post.detail-view {
+    padding: 0 10px;
+  }
+
+  .post blockquote {
+    margin-left: -10px;
+  }
+
+  /*FOOT */
+
+  .foot_logo {
     display: none;
+  }
+
+  .foot_userbar,
+  .next-article {
+    padding-left: 10px;
   }
 }
