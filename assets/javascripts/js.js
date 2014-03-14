@@ -3,7 +3,11 @@ functions = {
         var windowWidth = $(window).width(),
             buttonNav = $('.side-nav__button');
 
-        buttonNav.addClass('on-mobile');
+        if (windowWidth < 500) {
+            buttonNav.addClass('on-mobile');
+        } else {
+            buttonNav.removeClass('on-mobile');
+        }
     }
 };
 
