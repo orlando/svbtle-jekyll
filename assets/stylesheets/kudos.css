@@ -4,6 +4,17 @@
 
 .kudo {
   display: block;
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
+  -moz-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
+  -ms-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
+  -o-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
+  transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
+}
+
+.kudo.hide {
+  bottom: -100px;
 }
 
 
@@ -25,7 +36,6 @@ figure.kudo {
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
-  z-index: 50;
 }
 
 figure.kudo a {
@@ -43,11 +53,10 @@ figure.kudo a {
 }
 
 .detail-view figure.kudo a {
-  position: fixed;
-  bottom: 54px;
+  position: absolute;
+  bottom: 4px;
   margin-top: 0;
-  right: 19px;
-  z-index: 9999;
+  right: 4px;
 }
 
 .kudo.activated:hover .num {
