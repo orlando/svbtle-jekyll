@@ -725,7 +725,7 @@ nav.pagination span.next {
   text-decoration: none;
 }
 
-.post.detail-view pre {
+.post pre {
   background-color: rgb(248, 248, 248);
   border-top: 1px solid rgba(144, 144, 144, .3);
   border-bottom: 1px solid rgba(144, 144, 144, .3);
