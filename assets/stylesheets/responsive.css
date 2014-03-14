@@ -105,6 +105,11 @@
     margin-top: 22px;
   }
 
+  .first-post .post.detail-view .title {
+    font-size: 25px;
+    line-height: 28px;
+  }
+
   .read-more {
     font-size: 16px;
   }

@@ -773,12 +773,14 @@ nav.pagination span.next {
   line-height: normal;
 }
 
-.first-post .detail-view .title {
-  font: 30px/36px;
+.first-post .post.detail-view .title {
+  font-size: 30px;
+  line-height: 36px;
 }
 
 .detail-view .title {
-  font: 38px/43px;
+  font-size: 38px;
+  line-height: 43px;
 }
 
 .detail-view .title a:hover {
