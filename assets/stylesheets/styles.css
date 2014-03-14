@@ -792,6 +792,14 @@ nav.pagination span.next {
   border: none;
 }
 
+.first-post .post.detail-view .title a {
+  border-bottom: 3px solid #eee;
+}
+
+.first-post .post.detail-view .title a:hover {
+  border-color: #F40000;
+}
+
 .post.detail-view .anchor-icon {
   position: absolute;
   top: -5px;
@@ -823,12 +831,20 @@ nav.pagination span.next {
 
 .anchor-icon .fa {
   opacity: .15;
-  visibility: hidden; /*It will be showed just for first article on the blog*/
+  visibility: hidden;
+}
+
+.first-post .anchor-icon .fa {
+  position: relative;
+  top: 0px;
+  left: 5px;
+  visibility: initial;
 }
 
 .anchor-icon time {
   opacity: 0;
   font-size: 14px;
+  margin-left: 5px;
   line-height: 45px;
   font-weight: bold;
 }

@@ -76,6 +76,7 @@
   }
 
   .post.detail-view .anchor-icon {
+    margin-left: 0;
     top: -67px;
     left: auto;
     right: 45px;
