@@ -155,8 +155,8 @@
 
 @media only screen and (max-width: 500px) {
   
-  h1.mlogotype {
-    top: 20px
+  .mlogotype {
+    top: 27px
   }
 
   /*side-nav*/
