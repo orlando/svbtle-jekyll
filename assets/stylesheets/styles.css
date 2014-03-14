@@ -236,6 +236,7 @@ h1.mlogotype {
 .read-more {
   display: block;
   margin-left: 0;
+  margin-top: 25px;
 }
 
 .posts-container hr {
