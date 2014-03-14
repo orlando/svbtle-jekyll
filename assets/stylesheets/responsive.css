@@ -113,6 +113,10 @@
   .detail-view .kudo {
     display: none;
   }
+
+  .foot_logo {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 665px) {
@@ -163,10 +167,6 @@
   }
 
   /*FOOT */
-
-  .foot_logo {
-    display: none;
-  }
 
   .foot_userbar,
   .next-article {
