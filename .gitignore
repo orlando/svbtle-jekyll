@@ -1,7 +1,7 @@
 _site/*
 _site
 .bundle/*
-_posts/*
+_posts/*.markdown
 *.swp
 *.swo
 .rvmrc

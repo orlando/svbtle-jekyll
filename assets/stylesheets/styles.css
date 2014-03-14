@@ -741,12 +741,21 @@ nav.pagination span.next {
   line-height: normal;
 }
 
-.first-post.post.detail-view h1.title {
+.first-post .detail-view .title {
   font: 30px/36px;
 }
 
 .detail-view .title {
   font: 38px/43px;
+}
+
+.detail-view .title a:hover {
+  color: inherit;
+  border: none;
+}
+
+.post.detail-view .title a {
+  border: none;
 }
 
 .post.detail-view .anchor-icon {
@@ -825,7 +834,6 @@ nav.pagination span.next {
 
 .detail-view .title:hover a{
   color: #000;
-  border-bottom: 3px solid #F40000;
 }
 
 .detail-view .title:hover + .anchor-icon .fa-anchor, 
