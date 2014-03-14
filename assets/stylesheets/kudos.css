@@ -168,6 +168,11 @@
   right: 5px;
 }
 
+.group .kudo .filling {
+  top: 18px;
+  left: 18px;
+}
+
 .group .kudo.completed .filling {
   width: 14px;
   height: 14px;
@@ -175,12 +180,30 @@
   left: 16px;
 }
 
-.group .kudo .num{
-  left: 70px;
-  top: 10px;
+.group .kudo .txt{
+  float: left;
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 10px;
+  line-height: 52px;
+  left: auto;
+  position: initial;
+  top: auto;
 }
 
-.group .kudo .txt{
-  left: 83px;
-  top: 15px;
+.group .kudo .num{
+  float: left;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 45px;
+  left: auto;
+  position: initial;
+  top: auto;
+  width: initial;
+}
+
+.group .kudo-info {
+  position: absolute;
+  width: 200px; /*Enough space to allow the info to be inline*/
+  left: 70px;
 }
