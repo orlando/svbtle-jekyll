@@ -47,26 +47,29 @@ $(document).ready(function () {
             buttonNavMobile = buttonNav.filter('.on-mobile'),
             scrollTop = $(window).scrollTop(),
             windowHeight = $(window).height(),
+            windowWidth = $(window).width(),
             kudoSide = $('.kudo').last(),
             kudoBottom = $('.group'), //kudo-bottom
             kudoBottomPosition = false;
 
-            if (kudoBottom.length > 0) {
-                kudoBottomPosition = kudoBottom.offset().top;
+        if (kudoBottom.length > 0) {
+            kudoBottomPosition = kudoBottom.offset().top;
+        }
+
+        if (windowWidth < 500 ) {
+            if (scrollTop === 0) {
+                buttonNav.closest('.side-nav-container').show();
+            } else {
+                buttonNav.closest('.side-nav-container').hide();
             }
+        }
 
         if ( scrollTop > 150) {
             logotype.addClass('is-showed');
             buttonNav.addClass('no-opacity');
-            if ( buttonNavMobile.length > 0) {
-                buttonNavMobile.hide();
-            }
         } else {
             logotype.removeClass('is-showed');
             buttonNav.removeClass('no-opacity');
-            if ( buttonNavMobile.length > 0) {
-                buttonNavMobile.show();
-            }
         }
 
         if (kudoBottomPosition !== false && ( scrollTop + windowHeight > kudoBottomPosition)) {
