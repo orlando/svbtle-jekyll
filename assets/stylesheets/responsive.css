@@ -158,6 +158,7 @@
 
   /*POST*/
 
+  .posts-container,
   .post.detail-view {
     padding: 0 10px;
   }

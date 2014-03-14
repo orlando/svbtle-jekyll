@@ -11,10 +11,12 @@
   -ms-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
   -o-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
   transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
+  z-index: 100;
 }
 
 .kudo.hide {
   bottom: -100px;
+  z-index: 0;
 }
 
 
