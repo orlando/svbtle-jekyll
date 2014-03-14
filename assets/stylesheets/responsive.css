@@ -75,6 +75,10 @@
     width: 60vw;
   }
 
+  .anchor-icon {
+    pointer-events: none;
+  }
+
   .post.detail-view .anchor-icon {
     margin-left: 0;
     top: -67px;

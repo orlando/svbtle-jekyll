@@ -3,6 +3,12 @@ functions = {
         var windowWidth = $(window).width(),
             buttonNav = $('.side-nav__button');
 
+        buttonNav.on('click', function () {
+            var menu = $(this).closest('.side-nav-container');
+            menu.toggleClass('is-showed');
+            $(this).toggleClass('active');
+        });
+
         if (windowWidth < 500) {
             buttonNav.addClass('on-mobile');
         } else {
@@ -27,9 +33,11 @@ $(document).ready(function () {
 
     $('.side-nav-container').hover(function () {
         $(this).addClass('is-showed');
+        $(this).find('.side-nav__button').addClass('active');
         $('.kudo').addClass('hide');
     }, function() {
         $(this).removeClass('is-showed');
+        $(this).find('.side-nav__button').removeClass('active');
         $('.kudo').removeClass('hide');
     });
 

@@ -138,7 +138,6 @@ a:visited {
   font-size: 14px;
   letter-spacing: 0;
   font-family: Raleway, 'freight-sans-pro','proxima-nova','Helvetica';
-  z-index: 100;
   transition-property: all;
   transition-duration: .3s;
   -webkit-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
@@ -501,12 +500,6 @@ article .read-more.button{
   top: 90%;
 }
 
-.side-nav-container:hover .side-nav__button {
-  opacity: 1; 
-  background: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/x_black_2x-6906acfa952d431ed14dbc82c656f72c.png) no-repeat 5px 5px;
-  background-size: 10px 10px;
-}
-
 .side-nav .top {
   margin-top: 55px;
 }
@@ -548,16 +541,17 @@ article .read-more.button{
   background-origin: padding-box;
   background-size: 10px 7px;
   position: fixed;
-  top: 0;
+  top: 3px;
   right: 0;
   margin-right: 15px;
   z-index: 10;
   opacity: .2;
 }
 
-.side-nav__button:hover {
+.side-nav__button.active {
   opacity: 1;
-  background: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/x_black_2x-6906acfa952d431ed14dbc82c656f72c.png) 5px 8px;
+  background: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/x_black_2x-6906acfa952d431ed14dbc82c656f72c.png) 5px 5px no-repeat;
+  background-size: 50%;
 }
 
 .nav-profile-links {
