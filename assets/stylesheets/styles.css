@@ -132,7 +132,7 @@ a:visited {
   margin: 0;
   padding: 0;
   position: absolute;
-  left: 65px;
+  left: 70px;
   top: -27px;
   font-weight: 900;
   font-size: 14px;
@@ -291,6 +291,11 @@ article:nth-child(3)::before,
 .read-first,
 *::before {
   max-width: 550px;
+}
+
+*::before,
+.read-first {
+  font-size: 14px; /*change the original to maintain the same look with different font*/ 
 }
 
 .tag,
@@ -608,7 +613,11 @@ nav.pagination span.next {
   width: 150px;
 }
 
-.foot_logo span {
+.foot_logo.right {
+  float: right;
+}
+
+.foot_logo .logo {
   text-transform: uppercase;
   font-weight: 900;
   color: #ddd;
@@ -619,6 +628,17 @@ nav.pagination span.next {
   line-height: 20px;
   padding-left: 10px;
   margin: 40px 30px 30px;
+}
+
+.foot_logo .link {
+  display: inline-block;
+  margin-right: 50px;
+  padding-top: 40px;\
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 600;
+  color: #ddd;
+  border-bottom: 3px solid #ddd;
 }
 
 .foot_userbar {
@@ -647,6 +667,7 @@ nav.pagination span.next {
   color: #000;
 }
 
+.link:hover,
 .bottom_tagline span:hover {
   color: #F40000;
   border-color: #F40000;
