@@ -1,12 +1,15 @@
 $(document).ready(function() {
   
   $(window).scroll(function () {
+    var logotype = $('.logotype');
+    var buttonNav = $('.side-nav__button');
+
     if ($(window).scrollTop() > 150) {
-      $('.logotype').css({'margin-right': '0'});
-      $('.side-nav__button').css({'opacity': '1'});
+      logotype.addClass('is-showed');
+      buttonNav.addClass('no-opacity');
     } else {
-      $('.logotype').css({'margin-right':'-100px'});
-      $('.side-nav__button').css({'opacity': '.3'});
+      logotype.removeClass('is-showed');
+      buttonNav.removeClass('no-opacity')
     }
   });  
 
