@@ -892,7 +892,7 @@ nav.pagination span.next {
 }
 
 .post.detail-view .title { /*Need to have that especificity - see line 271*/
-  font-size: 36px; /*Should be 38px but as the difference of font needs now is set smaller*/
+  font-size: 28px; /*Should be 38px but as the difference of font needs now is set smaller*/
   line-height: 43px;
 }
 

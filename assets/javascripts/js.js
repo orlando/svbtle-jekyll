@@ -8,11 +8,22 @@ functions = {
         } else {
             buttonNav.removeClass('on-mobile');
         }
+    },
+
+    appendKudoTo : function (section) {
+        var kudo = new Kudos(); 
+        kudo.render(section); 
+
+        return kudo;
     }
 };
 
 $(document).ready(function () {
     functions.setButtonNav();
+
+    if ($('.detail-view').length > 0) {
+        functions.appendKudoTo($('.group'));
+    }
 
     $('.side-nav-container').hover(function () {
         $(this).addClass('is-showed');
@@ -29,11 +40,11 @@ $(document).ready(function () {
             scrollTop = $(window).scrollTop(),
             windowHeight = $(window).height(),
             kudoSide = $('.kudo'),
-            kudoBottom = $('.instapaper'), // $('.kudo-bottom')
+            kudoBottom = $('.group'), //kudo-bottom
             kudoBottomPosition = false;
 
             if (kudoBottom.length > 0) {
-                kudoBottomPosition = kudoBottom.offset().top; // instapaper for now while adding kudo-bottom elem
+                kudoBottomPosition = kudoBottom.offset().top;
             }
 
         if ( scrollTop > 150) {
