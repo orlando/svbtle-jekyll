@@ -1,12 +1,30 @@
+/* IPad potrait */
+@media only screen (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  
+  .detail-view .main-header {
+    padding-top: 100px;
+  }
+
+  .detail-view .avatar {
+    top: 80px;
+  }
+
+
+  .home_logotype_link {
+    display: none;
+  }
+}
+
+/*
 @media only screen and (max-width: 1024px) {
   .read-more.button {
     max-width: 200px;
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 1024px) {
   
-  /* LOGO */
+  // LOGO 
 
   .main-view .avatar {
     float: none;
@@ -32,7 +50,7 @@
     display: none !important;
   }
 
-  /*HEADER*/
+  //HEADER
 
   .main-view .profile-name {
     height: 45px;
@@ -75,7 +93,7 @@
     margin-top: 15px;
   }
 
-  /*POST*/
+  //POST
   
   .article-separator {
     width: 60vw;
@@ -125,7 +143,7 @@
     font-size: 16px;
   }
 
-  /* Kudo */
+  // Kudo
   .detail-view .kudo {
     display: none;
   }
@@ -137,12 +155,13 @@
 
 @media only screen and (max-width: 665px) {
   
-  /*HEADER*/
+  // HEADER
   .detail-view .main-header {
-    padding-top: 1.6%; /*Trying to solve the margin that came on IPad*/
+    padding-top: 1.6%; //Trying to solve the margin that came on IPad
   }
 
-  /* LOGO */
+  // LOGO 
+
   .detail-view .avatar {
     float: none;
     position: relative;
@@ -169,10 +188,10 @@
     top: 27px
   }
 
-  /*side-nav*/
+  //SIDE-NAV
 
 
-  /*POST*/
+  //POST
 
   .read-first,
   .post {
@@ -183,10 +202,10 @@
     margin-left: -10px;
   }
 
-  /*FOOT */
+  //FOOT 
 
   .foot_userbar,
   .next-article {
     padding-left: 10px;
   }
-}
+} */
