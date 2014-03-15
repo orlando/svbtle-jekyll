@@ -1,33 +1,36 @@
 .kudo {
-  display: none;
-}
-
-figure.kudo a:hover,
-figure.kudo a:hover div {
-  font-weight: bold;
-  color: #000;
-  border: none;
-}
-
-.detail-view .kudo {
-  display: block;
-}
-
-figure.kudo {
   color: #000;
   position: fixed;
-  right: 19px;
+  right: 15px;
   bottom: 50px;
   background-color: #000;
   width: 40px;
   height: 40px;
+  margin: 0;
   border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
-  z-index: 50;
+  transition-property: opacity,transform;
+  transition-duration: .5s;
+  -webkit-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
+  -moz-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
+  -ms-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
+  -o-transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
+  transition-timing-function: cubic-bezier(0.165,0.630,0.140,0.820);
+  z-index: 100;
 }
 
-figure.kudo a {
+.kudo.hide {
+  bottom: -100px;
+  z-index: 0;
+}
+
+.kudo.hide-deep {
+  right: -100px;
+  z-index: 0; 
+}
+
+.kudo a {
   display: block;
   position: relative;
   background-color: #fff;
@@ -41,28 +44,76 @@ figure.kudo a {
   cursor: default;
 }
 
-.detail-view figure.kudo a {
-  position: fixed;
-  bottom: 54px;
+.post.detail-view .kudo a {
+  border: none;
+}
+
+.kudo a:hover,
+.kudo a:hover div {
+  font-weight: bold;
+  color: #000;
+  border: none;
+}
+
+.kudo .num {
+  position: absolute;
+  width: 58px;
+  left: -12px;
+  top: 34px;
+  font-family: Raleway, "freight-sans-pro",sans-serif;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+}
+
+.kudo .txt {
+  position: absolute;
+  width: 58px;
+  left: -12px;
+  top: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: Raleway, "freight-sans-pro",sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.kudo.activated .txt {
+  top: 40px;
+  font-size: 16px;
+}
+
+.kudo.activated .num {
+  display: none;
+}
+
+.main-view .kudo {
+  display: none;
+}
+
+.detail-view .kudo a {
+  position: absolute;
+  bottom: 4px;
   margin-top: 0;
-  right: 23px;
-  z-index: 9999;
+  right: 4px;
 }
 
 .kudo.activated:hover .num {
   display: none;
 }
 
-figure.kudo{
-  margin:0;
-}
+/* Filling for KUDO */
 
-figure.kudo div.filling {
+.kudo .filling {
   position: absolute;
   background-color: #000;
   display: block;
   width: 10px;
   height: 10px;
+  margin: 0;
   top: 11px;
   left: 11px;
   background-repeat: no-repeat;
@@ -85,48 +136,14 @@ figure.kudo div.filling {
   -moz-transition-timing-function: ease-out;
 }
 
-figure.kudo.activated div.filling{
+
+.kudo.activated .filling{
   transform: scale(2.8);
   -moz-transform: scale(2.8);
   -webkit-transform: scale(2.8);
 }
 
-figure.kudo div.num {
-  position: absolute;
-  width: 58px;
-  left: -10px;
-  top: 40px;
-  font-family: Raleway, "freight-sans-pro",sans-serif;
-  font-size: 20px;
-  line-height: 25px;
-  font-weight: 700;
-  text-align: center;
-  color: #000;
-}
-
-figure.kudo div.txt {
-  position: absolute;
-  width: 58px;
-  left: -10px;
-  top: 62px;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: Raleway, "freight-sans-pro",sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-}
-
-figure.kudo.activated div.txt {
-  top: 40px;
-  font-size: 16px;
-}
-
-figure.kudo.activated div.num {
-  display: none;
-}
-
-figure.kudo.completed div.filling{
+.kudo.completed .filling{
   background-image: url(/assets/images/main.png);
   transition-property: none;
   animation: bounce 1s;
@@ -143,58 +160,63 @@ figure.kudo.completed div.filling{
   -moz-transform: scale(2.8);
 }
 
-@media only screen and (max-width: 760px), (device-height: 1024px) and (device-width: 768px) and (orientation: portrait), (device-height: 1024px) and (device-width: 768px) and (orientation: landscape){
-  figure.kudo {
-    float: none;
-    left: auto;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    position: relative;
-    display: block;
-    width: 80px;
-    height: 80px;
-    margin-bottom: 50px;
-    margin-top: 30px;
-  }
+ /*Styles for KUDO on article foot*/
 
-  figure.kudo a {
-    width: 68px;
-    height: 68px;
-    top: 5px;
-  }
+.group .kudo {
+  position: relative;
+  bottom: auto;
+  right: auto;
+  margin: 50px 0 50px 20%;
+  width: 90px;
+  height: 90px;
+}
 
-  figure.kudo div.filling {
-    width: 60px;
-    height: 60px;
-    top: 4px;
-    left: 4px;
-  }
+.group .kudo a{
+  bottom: 5px;
+  height: 80px;
+  width: 80px;
+  right: 5px;
+}
 
-  figure.kudo div.num {
-    top: 0;
-    left: 85px;
-    font-size: 30px;
-    line-height: 50px;
-    text-align: left;
-  }
+.group .kudo .filling {
+  top: 35%;
+  left: 35%;
+  height: 30%;
+  width: 30%;
+}
 
-  figure.kudo div.txt {
-    top: 44px;
-    left: 85px;
-    text-align: left;
-    font-size: 14px;
-    line-height: 14px;
-  }
+.group .kudo.completed .filling {
+  width: 30%;
+  height: 30%;
+  top: 35%;
+  left: 35%;
+}
 
-  figure.kudo.activated div.txt {
-    top: 16px;
-    font-size: 30px;
-    line-height: 30px;
-    letter-spacing: 0;
-    text-align: left;
-    font-weight: 700;
-    min-width: 200px;
-    text-transform: none;
-  }
+.group .kudo .txt{
+  float: left;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 10px;
+  line-height: 52px;
+  left: auto;
+  position: initial;
+  top: auto;
+}
+
+.group .kudo .num{
+  float: left;
+  display: inline-block;
+  font-size: 28px;
+  line-height: 45px;
+  left: auto;
+  position: initial;
+  top: auto;
+  width: initial;
+}
+
+.group .kudo-info {
+  position: absolute;
+  width: 200px; /*Enough space to allow the info to be inline*/
+  left: 125%; /*Out of the container*/
+  top: 15px;
 }

@@ -1,7 +1,11 @@
 _site/*
 _site
 .bundle/*
+<<<<<<< HEAD
 _posts/*
+=======
+_posts/*.markdown
+>>>>>>> develop
 *.swp
 *.swo
 .rvmrc
