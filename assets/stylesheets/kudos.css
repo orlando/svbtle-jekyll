@@ -26,7 +26,7 @@
 }
 
 .kudo.hide-deep {
-  bottom: -100px !important;
+  right: -100px;
   z-index: 0; 
 }
 
@@ -44,6 +44,10 @@
   cursor: default;
 }
 
+.post.detail-view .kudo a {
+  border: none;
+}
+
 .kudo a:hover,
 .kudo a:hover div {
   font-weight: bold;
@@ -54,10 +58,10 @@
 .kudo .num {
   position: absolute;
   width: 58px;
-  left: -10px;
-  top: 40px;
+  left: -12px;
+  top: 34px;
   font-family: Raleway, "freight-sans-pro",sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 25px;
   font-weight: 700;
   text-align: center;
@@ -67,13 +71,13 @@
 .kudo .txt {
   position: absolute;
   width: 58px;
-  left: -10px;
-  top: 62px;
+  left: -12px;
+  top: 55px;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: Raleway, "freight-sans-pro",sans-serif;
-  font-size: 12px;
+  font-size: 8px;
   font-weight: 700;
 }
 
@@ -156,39 +160,40 @@
 
  /*Styles for KUDO on article foot*/
 
- .group .kudo {
+.group .kudo {
   position: relative;
   bottom: auto;
   right: auto;
-  margin: 0;
-  margin: 50px 0;
-  width: 56px;
-  height: 56px;
+  margin: 50px 0 50px 20%;
+  width: 90px;
+  height: 90px;
 }
 
 .group .kudo a{
   bottom: 5px;
-  height: 46px;
-  width: 46px;
+  height: 80px;
+  width: 80px;
   right: 5px;
 }
 
 .group .kudo .filling {
-  top: 18px;
-  left: 18px;
+  top: 35%;
+  left: 35%;
+  height: 30%;
+  width: 30%;
 }
 
 .group .kudo.completed .filling {
-  width: 14px;
-  height: 14px;
-  top: 16px;
-  left: 16px;
+  width: 30%;
+  height: 30%;
+  top: 35%;
+  left: 35%;
 }
 
 .group .kudo .txt{
   float: left;
   display: inline-block;
-  font-size: 12px;
+  font-size: 16px;
   margin-left: 10px;
   line-height: 52px;
   left: auto;
@@ -199,7 +204,7 @@
 .group .kudo .num{
   float: left;
   display: inline-block;
-  font-size: 22px;
+  font-size: 28px;
   line-height: 45px;
   left: auto;
   position: initial;
@@ -210,5 +215,6 @@
 .group .kudo-info {
   position: absolute;
   width: 200px; /*Enough space to allow the info to be inline*/
-  left: 70px;
+  left: 125%; /*Out of the container*/
+  top: 15px;
 }
