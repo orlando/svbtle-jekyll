@@ -256,15 +256,22 @@
   }
 }
 
-/*
 @media only screen and (max-width: 665px) {
-  
-  // HEADER
+
+  /*// HEADER*/
+
+  .main-view .main-header,
   .detail-view .main-header {
-    padding-top: 1.6%; //Trying to solve the margin that came on IPad
+    padding-top: 10px;
   }
 
-  // LOGO 
+  /*//SIDE-NAV*/
+
+  .logotype {
+    display: none;
+  }
+
+  /*// LOGO */
 
   .detail-view .avatar {
     float: none;
@@ -284,18 +291,45 @@
     height: 40px;
     top: 5px;
   }
+
+  /*//POST*/
+  .post .article-separator {
+    width: 80%;
+  }
+
+
+  /*//Kudo*/
+
+  .group figure.kudo {
+    display: block;
+  }
+
+  figure.kudo {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 500px) {
   
+  .main-view .main-header {
+    padding-top: 0;
+  }
+
   .mlogotype {
     top: 27px
   }
 
-  //SIDE-NAV
+  /*//SIDE-NAV*/
+  .side-nav-container.is-showed {
+    right: 300px;
+  }
 
+  .side-nav {
+    width: 300px;
+    right: -300px;
+  }
 
-  //POST
+  /*//POST*/
 
   .read-first,
   .post {
@@ -306,10 +340,10 @@
     margin-left: -10px;
   }
 
-  //FOOT 
+  /*//FOOT */
 
   .foot_userbar,
   .next-article {
     padding-left: 10px;
   }
-} */
+} 
