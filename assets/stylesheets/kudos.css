@@ -136,7 +136,6 @@
   -moz-transition-timing-function: ease-out;
 }
 
-
 .kudo.activated .filling{
   transform: scale(2.8);
   -moz-transform: scale(2.8);

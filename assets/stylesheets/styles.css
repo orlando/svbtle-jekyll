@@ -552,7 +552,6 @@ article .read-more.button{
   opacity: .2;
 }
 
-
 .side-nav__button.active {
   opacity: 1;
   background: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/x_black_2x-6906acfa952d431ed14dbc82c656f72c.png) 5px 5px no-repeat;
@@ -965,6 +964,7 @@ nav.pagination span.next {
   100% {color: #F40000;}
 }
 
+>>>>>>> 68ea6bcd6a2b3f983a1cad41a01717b1ac346cdd
 .instapaper,
 .next-article__content {
   font-size: 18px;
