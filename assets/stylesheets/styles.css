@@ -223,10 +223,14 @@ a:visited {
   width: 100%;
 }
 
-.posts-container * {
+.group {
   margin: 0 auto;
 }
 
+.post blockquote,
+.button-container,
+.posts-container p,
+.title,
 .posts-container pre,
 .read-more,
 .posts-container .tag {

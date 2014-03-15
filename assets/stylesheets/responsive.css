@@ -122,6 +122,10 @@
     padding-top: 50px;
   }
 
+  .detail-view .main-header {
+    padding-top: 100px;
+  }
+
   .main-view .avatar {
     float: none;
     position: relative;
@@ -133,6 +137,10 @@
     margin-bottom: 70px;
     width: 50px;
     height: 50px;
+  }
+
+  .detail-view .avatar {
+    top: 80px
   }
 
   .main-view .avatar a {
@@ -206,7 +214,7 @@
     line-height: 36px;
   }
 
-  article:nth-child(2) .post {
+  .main-view article:nth-child(2) p {
     font-size: 17px;
     line-height: 27px;
   }
@@ -234,13 +242,17 @@
     font-size: 16px;
   }
 
-  /*//Kudo*/
-  .detail-view .kudo {
+  .foot_logo {
     display: none;
   }
 
-  .foot_logo {
-    display: none;
+  /*//Kudo*/
+  .group figure.kudo {
+    bottom: auto;
+  }
+  
+  figure.kudo {
+    bottom: 90px;
   }
 }
 
