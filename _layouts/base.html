@@ -21,10 +21,7 @@
     <!-- libraries -->
     <link rel="stylesheet" media="screen" type="text/css" href="/assets/stylesheets/reset.css"/>
     <link rel="stylesheet" media="screen" type="text/css" href="/assets/stylesheets/styles.css"/>
-    <link rel="stylesheet" media="screen" type="text/css" href="/assets/stylesheets/responsive.css"/>
     <link rel="stylesheet" media="screen" type="text/css" href="/assets/stylesheets/github.css"/>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <script data-cfasync="false" type="text/javascript" src="{{page.typekit_url}}"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     {% if site.data.svbtle.enable_kudos && site.data.svbtle.kudos_url %}
@@ -40,119 +37,35 @@
     {% endif %}
   </head>
   <body style="zoom: 1;">
-    <div class="main-container main-view">
-      
-      <div class="mlogotype is-uppercase">
-        <a href="https://svbtle.com">Svbtle</a>
-      </div>
-
-      <a href="https://svbtle.com" class="home_logotype_link">
-        <h1 class="tag">Svbtle</h1>
-      </a>
-
-      <div class="header-container">
-        <header class="main-header">
-          <figure class="avatar">
-            <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_text}}</a> 
-          </figure>
-          <h1 class="profile-name is-uppercase">
-            <a href="{{site.data.svbtle.profile_url}}">STEVE KLABNIK</a> <!-- {{site.data.svbtle.website_text}} -->
-          </h1>
-          <h2 class="subtitle">“The most violent element in society is ignorance.” - Emma Goldman</h2> <!-- {{site.data.svbtle.subtitle}} -->
-          <ul class="profile-links">
-            <li class="twitter">
-              <a href="http://twitter.com/{{site.data.svbtle.twitter}}">
-                <span>@{{site.data.svbtle.twitter}}</span>
-              </a>
-            </li>
-            <li class="website">
-              <a href="{{site.data.svbtle.website_url}}">
-                <span>{{site.data.svbtle.website_name}}</span>
-              </a>
-            </li>
-          </ul>
-        </header>
-      </div>
-
-      <div class="posts-container">
-        <span class="tag read-first is-uppercase">read this first</span>
-        {{content}}
-      </div>
-
-      <nav class="pagination">
-        <span class="next">
-          <a href="/page/2" rel="next">Next&nbsp;&nbsp;&nbsp;→</a>
-        </span>
-      </nav>
-
-      <div class="line"></div>
-
-      <div class="foot_logo">
-        <a href="https://svbtle.com"><span class="logo">Svbtle</span></a>
-      </div>
-
-      <div class="foot_userbar">
-        <a href="#" class="bottom_tagline">
-          <span>Steve Klabnik</span> "The most violent element in society is ignorance." - Emma Goldman
-        </a>
-        <a href="https://twitter.com/user" class="linkout twitter">
-          <i class="fa fa-twitter"></i>
-          @{{site.data.svbtle.twitter}}
-        </a>
-        <a href="mailto:steve@steveklabnik.com?subject=hi" class="linkout contact">say hello</a>
-      </div>
-
-      <div class="copyright tag">
-        © 2014
+    <div class="unit">
+      <div class="same-height columns adaptive-250-760">
+        <div id="header" class="column fixed left">
+          <div class="container">
+            <header id="sidebar">
+              <figure class="logo medium">
+                <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_text}}</a>
+              </figure>
+              <h1><a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_url_text}}</a></h1>
+              <h2><a href="{{site.data.svbtle.profile_url}}">{{site.data.svbtle.profile_name}}</a></h2>
+              <h3><p>{{site.data.svbtle.subtitle}}</p></h3>
+              <ul id="user_nav">
+                <li class="website"><a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_name}}</a></li>
+                <li class="link twitter "><a href="http://twitter.com/{{site.data.svbtle.twitter}}">@{{site.data.svbtle.twitter}}</a></li>
+                <li class="link email"><a href="{{site.data.svbtle.email_with_subject}}">say hello</a></li>
+                <li class="link feed"><a href="{{site.data.svbtle.feed_url}}">feed</a></li>
+              </ul>
+            </header>
+          </div>
+        </div>
+        <div id="content" class="column elastic main">
+          <div class="container">
+            <section class="content">
+              {{content}}
+            </section>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="side-nav-container">
-      <div class="side-nav__button">&nbsp;</div>
-      <h3 class="logotype"><a class="is-uppercase tag" href="#">svbtle</a></h3>
-      <nav class="side-nav">
-        <div class="top">
-          <p>
-            {{site.data.svbtle.website_name}} is writing on 
-            <a href="#"><span class="tag">svbtle</span></a> 
-            network
-          </p>
-          <ul class="nav-profile-links">
-            <li class="website">
-              <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_name}}</a>
-            </li>
-            <li class="twitter">
-              <a href="http://twitter.com/{{site.data.svbtle.twitter}}">@{{site.data.svbtle.twitter}}</a>
-            </li>
-            <li class="email">
-              <a href="{{site.data.svbtle.email_with_subject}}">say hello</a>
-            </li>
-            <li class="feed">
-              <a href="{{site.data.svbtle.feed_url}}">feed</a>
-            </li>
-          </ul>
-        </div>
-        <div class="about">
-          <ul class="about-links">
-            <li>
-              <a href="#">
-                <span class="tag">svbtle</span>
-              </a>
-            </li>
-            <li class="magazine">
-              <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_name}}</a>
-            </li>
-            <li class="about">
-              <a href="http://twitter.com/{{site.data.svbtle.twitter}}">@{{site.data.svbtle.twitter}}</a>
-            </li>
-            <li class="svbtle-twitter">
-              <a href="http://twitter.com/{{site.data.svbtle.twitter}}">@{{site.data.svbtle.twitter}}</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-
     <script src="/assets/javascripts/js.js"></script>
     <script type="text/javascript">
       var _gaq = _gaq || [];
