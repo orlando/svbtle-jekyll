@@ -54,8 +54,10 @@ window.Kudos.HTML =
     '<figure class="kudo able" id="">\
         <a href="#kudo">\
             <div class="filling">&nbsp;</div>\
-            <div class="num">1,172</div>\
-            <div class="txt">Kudos</div>\
+            <div class="kudo-info">\
+                <div class="num">1,172</div>\
+                <div class="txt">Kudos</div>\
+            </div>\
         </a>\
     </figure>\
     '

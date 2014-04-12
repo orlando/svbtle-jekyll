@@ -1,0 +1,349 @@
+@media only screen and (max-width: 1024px) {
+  .read-more.button {
+    max-width: 200px;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  
+  .detail-view .main-header {
+    padding-top: 50px;
+  }
+
+  .home_logotype_link {
+    display: block;
+  }
+
+  .group figure.kudo {
+    margin-left: 0%;
+  }
+
+  .group figure.kudo {
+    height: 56px;
+    width: 56px;
+  }
+
+  .group figure.kudo a{
+    bottom: 3px;
+    height: 50px;
+    width: 50px;
+    right: 3px;
+  }
+
+  .group figure.kudo .kudo-info {
+    top: 4px;
+  }
+
+  .group figure.kudo .kudo-info .num {
+    font-size: 24px;
+    line-height: 40px;
+  }
+
+  .group figure.kudo .kudo-info .txt {
+    margin-left: 0;
+    font-size: 10px;
+    line-height: 42px;
+  }
+/*
+  .group .kudo .filling {
+    top: 35%;
+    left: 35%;
+    height: 30%;
+    width: 30%;
+  }
+
+  .group .kudo.completed .filling {
+    width: 30%;
+    height: 30%;
+    top: 35%;
+    left: 35%;
+  }
+
+  .group .kudo .txt{
+    font-size: 16px;
+    margin-left: 10px;
+    line-height: 52px;
+    left: auto;
+    position: initial;
+    top: auto;
+  }
+
+  .group .kudo .num{
+    font-size: 28px;
+    line-height: 45px;
+    left: auto;
+    position: initial;
+    top: auto;
+    width: initial;
+  }
+
+  .group .kudo-info {
+    position: absolute;
+    width: 200px; /*Enough space to allow the info to be inline/
+    left: 125%; Out of the container
+    top: 15px;
+  }*/
+}
+
+
+
+/*@media only screen and (min-width : 768px) and (max-width : 1024px) and (orientation : portrait) {
+
+  .detail-view .main-header {
+    padding-top: 50px;
+  }
+
+  .detail-view .avatar {
+    top: 33px;
+  }
+
+  .home_logotype_link {
+    display: block;
+  }
+
+  .group .kudo {
+    margin-left: 0%;
+  }
+}*/
+
+/*
+@media only screen and (max-width: 1024px) {
+  .read-more.button {
+    max-width: 200px;
+  }
+}
+*/
+
+@media only screen and (max-width: 780px) {
+  
+  /*// LOGO */
+
+  .main-view .main-header {
+    padding-top: 50px;
+  }
+
+  .detail-view .main-header {
+    padding-top: 100px;
+  }
+
+  .main-view .avatar {
+    float: none;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: 10px;
+    bottom: auto;
+    margin: 0;
+    margin-bottom: 70px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .detail-view .avatar {
+    top: 80px
+  }
+
+  .main-view .avatar a {
+    width: 40px;
+    height: 40px;
+    top: 5px;
+  }
+
+  .home_logotype_link {
+    display: none;
+  }
+
+  /*//HEADER*/
+
+  .main-view .profile-name {
+    height: 45px;
+    margin-top: 85px;
+  }
+
+  .main-view .profile-name a {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .detail-view .profile-name {
+    height: 28px;
+  }
+
+  .detail-view .profile-name a {
+    font-size: 18px;
+    line-height: normal;
+  }  
+
+  .subtitle {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .main-header .profile-links {
+    margin-bottom: 62px;
+  }
+
+  .main-header .profile-links > li {
+    display: block;
+    margin-top: 2px;
+  }
+  
+  .main-header .profile-links > li:first-child {
+    margin-top: 15px;
+  }
+
+  /*//POST*/
+  
+  .article-separator {
+    width: 60vw;
+  }
+
+  .anchor-icon {
+    pointer-events: none;
+  }
+
+  .post.detail-view .anchor-icon {
+    margin-left: 0;
+    top: -67px;
+    left: auto;
+    right: 45px;
+  }
+
+  article:nth-child(2) .title {
+    font-size: 34px;
+    line-height: 36px;
+  }
+
+  .main-view article:nth-child(2) p {
+    font-size: 17px;
+    line-height: 27px;
+  }
+
+  .detail-view .post p {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .post .title {
+    font-size: 27px;
+    line-height: 32px;
+  }
+
+  .detail-view .title {
+    margin-top: 22px;
+  }
+
+  .first-post .post.detail-view .title {
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  .read-more {
+    font-size: 16px;
+  }
+
+  .foot_logo {
+    display: none;
+  }
+
+  /*//Kudo*/
+  .group figure.kudo {
+    bottom: auto;
+  }
+  
+  figure.kudo {
+    bottom: 90px;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+
+  /*// HEADER*/
+
+  .main-view .main-header,
+  .detail-view .main-header {
+    padding-top: 10px;
+  }
+
+  /*//SIDE-NAV*/
+
+  .logotype {
+    display: none;
+  }
+
+  /*// LOGO */
+
+  .detail-view .avatar {
+    float: none;
+    position: relative;
+    left: auto;
+    right: auto;
+    top: 0;
+    bottom: auto;
+    margin: 0;
+    margin-bottom: 70px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .detail-view .avatar a {
+    width: 40px;
+    height: 40px;
+    top: 5px;
+  }
+
+  /*//POST*/
+  .post .article-separator {
+    width: 80%;
+  }
+
+
+  /*//Kudo*/
+
+  .group figure.kudo {
+    display: block;
+  }
+
+  figure.kudo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .main-view .main-header {
+    padding-top: 0;
+  }
+
+  .mlogotype {
+    top: 27px
+  }
+
+  /*//SIDE-NAV*/
+  .side-nav-container.is-showed {
+    right: 300px;
+  }
+
+  .side-nav {
+    width: 300px;
+    right: -300px;
+  }
+
+  /*//POST*/
+
+  .read-first,
+  .post {
+    padding: 0 10px;
+  }
+
+  .post blockquote {
+    margin-left: -10px;
+  }
+
+  /*//FOOT */
+
+  .foot_userbar,
+  .next-article {
+    padding-left: 10px;
+  }
+} 
