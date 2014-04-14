@@ -272,13 +272,13 @@ hr {
 }
 
 article:nth-child(3)::before {
-  content: "MORE BY [USER_NAME]";
+  content: "MORE ARTICLES";
   margin: 25px auto;
   text-transform: uppercase;
 }
 
 article:nth-child(3)::before,
-.posts-container span {
+.posts-container > span {
   display: block;
 }
 
@@ -288,6 +288,20 @@ article:nth-child(3)::before,
 
 .post {
   position: relative;
+}
+
+.post > * {
+	margin: 25px auto;
+}
+
+.post .highlight {
+	max-width: none;
+	text-align: justify;
+	background-color: rgb(248, 248, 248);
+	color: black;
+	border: 1px solid rgba(144, 144, 144, .3);
+	border-left: none;
+	border-right: none;
 }
 
 .post *,
@@ -358,17 +372,18 @@ article::before {
 .post code {
   background-color: rgb(248, 248, 248);
   border: 1px solid rgba(144, 144, 144, .3);
-  display: block;
   font-size: 13px;
-  line-height: 25px;
+  line-height: inherit;
   font-family: monospace;
-  margin-right: 0;
-  padding: 10px 0;
+  padding: 2px 5px;
   width: auto;
-  border-left: 0;
-  border-right: 0;
   margin: 16px auto;
-  overflow: auto;
+  border-radius: 10px;
+}
+
+.highlight pre code {
+	background: none;
+	border: none;
 }
 
 .instapaper {
@@ -435,7 +450,7 @@ article .read-more.button{
   background-size: 25px 10px;
   font-weight: bold;
   margin: 25px 0;
-  max-width: 185px;
+  max-width: 200px;
 }
 
 /*side nav*/
@@ -444,7 +459,7 @@ article .read-more.button{
   margin-right: -100px;
   position: fixed;
   top: 75px;
-  right: -3px;
+  right: 5px;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -o-transform: rotate(90deg);
@@ -541,9 +556,9 @@ article .read-more.button{
   margin: 1rem 0 1rem 70%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/arrow_down_black-4309ed2aa9ced3b702d2eda70ce014f5.png) no-repeat 5px 8px;
+  background: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/arrow_down_black-4309ed2aa9ced3b702d2eda70ce014f5.png) no-repeat 6px 8px;
   background-origin: padding-box;
-  background-size: 10px 7px;
+  background-size: 12px 7px;
   position: fixed;
   top: 3px;
   right: 0;
@@ -554,7 +569,7 @@ article .read-more.button{
 
 .side-nav__button.active {
   opacity: 1;
-  background: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/x_black_2x-6906acfa952d431ed14dbc82c656f72c.png) 5px 5px no-repeat;
+  background: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/x_black_2x-6906acfa952d431ed14dbc82c656f72c.png) 6px 5.5px no-repeat;
   background-size: 50%;
 }
 
@@ -747,11 +762,10 @@ nav.pagination span.next {
 }
 
 .post pre {
-  background-color: rgb(248, 248, 248);
-  border-top: 1px solid rgba(144, 144, 144, .3);
-  border-bottom: 1px solid rgba(144, 144, 144, .3);
-  margin: 0;
-  max-width: none;
+  max-width: 550px;
+	background-color: transparent;
+	border: none;
+	margin: 15px auto;
   width: 100%;
   white-space: pre-line;
 }
