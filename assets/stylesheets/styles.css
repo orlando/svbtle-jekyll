@@ -772,7 +772,6 @@ nav.pagination span.next {
 	border: none;
 	margin: 15px auto;
   width: 100%;
-  white-space: pre-line;
 }
 
 .post.detail-view code {
