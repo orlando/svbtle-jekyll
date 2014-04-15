@@ -16,11 +16,10 @@ functions = {
         }
     },
 
-    appendKudoTo : function (section) {
-        var kudo = new Kudos(); 
+    appendKudoTo : function (section, kudo) {
         kudo.render(section); 
 
-        return kudo;
+        return true;
     }
 };
 
@@ -28,7 +27,11 @@ $(document).ready(function () {
     functions.setButtonNav();
 
     if ($('.detail-view').length > 0) {
-        functions.appendKudoTo($('.group'));
+        var copyKudo;
+
+        console.log(Kudos.instances);
+        // copyKudo = Kudos.instances[0];
+        // functions.appendKudoTo($('.group'), copyKudo);
     }
 
     $('.side-nav-container').hover(function () {

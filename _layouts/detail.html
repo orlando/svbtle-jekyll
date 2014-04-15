@@ -43,20 +43,20 @@
     <div class="main-container">
       
       <div class="mlogotype is-uppercase">
-        <a href="https://svbtle.com">Svbtle</a>
+        <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_name}}</a>
       </div>
 
-      <a href="https://svbtle.com" class="tag home_logotype_link">
-        <h1>Svbtle</h1>
+      <a href="{{site.data.svbtle.website_url}}" class="home_logotype_link">
+        <h1 class="tag">{{site.data.svbtle.website_name}}</h1>
       </a>
 
       <div class="header-container detail-view">
         <header class="main-header">
           <figure class="avatar">
-            <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_text}}</a> 
+            <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_text}}</a>
           </figure>
           <h1 class="profile-name is-uppercase">
-            <a href="{{site.data.svbtle.profile_url}}">STEVE KLABNIK</a> <!-- {{site.data.svbtle.website_text}} -->
+            <a href="{{site.data.svbtle.profile_url}}">{{site.data.svbtle.profile_name}}</a>
           </h1>
         </header>
       </div>
@@ -68,7 +68,7 @@
       <div class="line hide-text">Separator line</div>
 
       <!-- Next article preview -->
-      <div class="next-article">
+      <div class="next-article" style="display: none;">
         <a href="#">
           <p class="read-next tag is-uppercase">Read this next:</p>
           <p class="next-article__title">Protocol and Language</p>
@@ -77,11 +77,12 @@
           </div>
         </a>
       </div>
+      <!-- Finish / Feature on process-->
 
       <div class="line hide-text">Separator line</div>
 
       <div class="foot_logo">
-        <a href="https://svbtle.com"><span class="logo">Svbtle</span></a>
+        <a href="{{site.data.svbtle.website_url}}"><span class="logo">{{site.data.svbtle.website_url_name}}</span></a>
       </div>
 
       <div class="foot_logo right">
@@ -90,52 +91,50 @@
 
       <div class="foot_userbar">
         <a href="#" class="bottom_tagline">
-          <span>Steve Klabnik</span> "The most violent element in society is ignorance." - Emma Goldman
+          <span>{{site.data.svbtle.profile_name}}</span> - {{site.data.svbtle.subtitle}}
         </a>
-        <a href="https://twitter.com/user" class="linkout twitter">
+        <a href="https://twitter.com/@{{site.data.svbtle.twitter}}" class="linkout twitter">
           <i class="fa fa-twitter"></i>
           @{{site.data.svbtle.twitter}}
         </a>
-        <a href="mailto:steve@steveklabnik.com?subject=hi" class="linkout contact">say hello</a>
+        <a href="{{site.data.svbtle.email_with_subject}}" target="_blank" class="linkout contact">Contact</a>
       </div>
 
-      <div class="copyright">
+      <div class="copyright tag">
         © 2014
       </div>
     </div>
 
     <div class="side-nav-container">
       <div class="side-nav__button">&nbsp;</div>
-      <h3 class="logotype">
-        <a class="tag is-uppercase" href="#">svbtle</a>
-      </h3>
+      <h3 class="logotype"><a class="is-uppercase tag" href="#">Menu</a></h3>
       <nav class="side-nav">
         <div class="top">
           <p>
-            {{site.data.svbtle.website_name}} is writing on <a href="#"><span class="tag">svbtle</span></a> network
+						Check more on: 
+            <a href="{{site.data.svbtle.website_url}}"><span class="tag">{{site.data.svbtle.website_name}}</span></a> 
           </p>
           <ul class="nav-profile-links">
             <li class="website">
-              <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_name}}</a>
+              <a href="{{site.data.svbtle.profile_url}}">{{site.data.svbtle.profile_name}}</a>
             </li>
             <li class="twitter">
               <a href="http://twitter.com/{{site.data.svbtle.twitter}}">@{{site.data.svbtle.twitter}}</a>
+            </li>
+            <li class="email">
+              <a href="{{site.data.svbtle.email_with_subject}}">Contact</a>
             </li>
           </ul>
         </div>
         <div class="about">
           <ul class="about-links">
             <li>
-              <a href="#"><span class="tag">svbtle</span></a>
+              <a href="#">
+                <span class="tag">RSS</span>
+              </a>
             </li>
             <li class="magazine">
-              <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_name}}</a>
-            </li>
-            <li class="about">
-              <a href="http://twitter.com/{{site.data.svbtle.twitter}}">@{{site.data.svbtle.twitter}}</a>
-            </li>
-            <li class="svbtle-twitter">
-              <a href="http://twitter.com/{{site.data.svbtle.twitter}}">@{{site.data.svbtle.twitter}}</a>
+              <a href="{{site.data.svbtle.feed_url}}">Feed</a>
             </li>
           </ul>
         </div>
