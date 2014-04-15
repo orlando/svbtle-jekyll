@@ -1,15 +1,7 @@
 _site/*
 _site
 .bundle/*
-<<<<<<< HEAD
-<<<<<<< HEAD
-_posts/*
-=======
 _posts/*.markdown
->>>>>>> develop
-=======
-_posts/*.markdown
->>>>>>> 68ea6bcd6a2b3f983a1cad41a01717b1ac346cdd
 *.swp
 *.swo
 .rvmrc

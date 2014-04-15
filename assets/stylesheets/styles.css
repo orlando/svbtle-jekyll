@@ -221,6 +221,7 @@ a:visited {
 
 .posts-container {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .group {
@@ -269,6 +270,10 @@ hr {
 .post .article-separator {
   max-width: none;
   width: 60%;
+}
+
+.post .article-separator:last-of-type {
+  display: none;
 }
 
 article:nth-child(3)::before {
