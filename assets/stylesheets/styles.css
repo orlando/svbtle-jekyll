@@ -561,7 +561,7 @@ article .read-more.button{
   margin: 1rem 0 1rem 70%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  background: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/arrow_down_black-4309ed2aa9ced3b702d2eda70ce014f5.png) no-repeat 6px 8px;
+  background: url(https://dtu1xr3i3b2a1.cloudfront.net/cargo/icons/arrow_down_black-4309ed2aa9ced3b702d2eda70ce014f5.png) no-repeat 50%;
   background-origin: padding-box;
   background-size: 12px 7px;
   position: fixed;
@@ -570,6 +570,7 @@ article .read-more.button{
   margin-right: 15px;
   z-index: 10;
   opacity: .2;
+  cursor: pointer;
 }
 
 .side-nav__button.active {
@@ -772,7 +773,6 @@ nav.pagination span.next {
 	border: none;
 	margin: 15px auto;
   width: 100%;
-  white-space: pre-line;
 }
 
 .post.detail-view code {
