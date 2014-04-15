@@ -15,24 +15,10 @@ functions = {
             buttonNav.removeClass('on-mobile');
         }
     },
-
-    appendKudoTo : function (section, kudo) {
-        kudo.render(section); 
-
-        return true;
-    }
 };
 
 $(document).ready(function () {
     functions.setButtonNav();
-
-    if ($('.detail-view').length > 0) {
-        var copyKudo;
-
-        console.log(Kudos.instances);
-        // copyKudo = Kudos.instances[0];
-        // functions.appendKudoTo($('.group'), copyKudo);
-    }
 
     $('.side-nav-container').hover(function () {
         $(this).addClass('is-showed');

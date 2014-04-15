@@ -104,7 +104,6 @@
 .kudo.activated:hover .num {
   display: none;
 }
-
 /* Filling for KUDO */
 
 .kudo .filling {
@@ -182,6 +181,42 @@
   left: 35%;
   height: 30%;
   width: 30%;
+}
+
+.group .kudo.completed .filling {
+  width: 30%;
+  height: 30%;
+  top: 35%;
+  left: 35%;
+}
+
+.group .kudo .txt{
+  float: left;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 10px;
+  line-height: 52px;
+  left: auto;
+  position: initial;
+  top: auto;
+}
+
+.group .kudo .num{
+  float: left;
+  display: inline-block;
+  font-size: 28px;
+  line-height: 45px;
+  left: auto;
+  position: initial;
+  top: auto;
+  width: initial;
+}
+
+.group .kudo-info {
+  position: absolute;
+  width: 200px; /*Enough space to allow the info to be inline*/
+  left: 125%; /*Out of the container*/
+  top: 15px;
 }
 
 .group .kudo.completed .filling {
