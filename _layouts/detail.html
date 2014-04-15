@@ -40,7 +40,7 @@
     {% endif %}
   </head>
   <body style="zoom: 1;">
-    <div class="main-container main-view">
+    <div class="main-container">
       
       <div class="mlogotype is-uppercase">
         <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_name}}</a>
@@ -50,45 +50,43 @@
         <h1 class="tag">{{site.data.svbtle.website_name}}</h1>
       </a>
 
-      <div class="header-container">
+      <div class="header-container detail-view">
         <header class="main-header">
           <figure class="avatar">
-            <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_text}}</a> 
+            <a href="{{site.data.svbtle.website_url}}">{{site.data.svbtle.website_text}}</a>
           </figure>
           <h1 class="profile-name is-uppercase">
             <a href="{{site.data.svbtle.profile_url}}">{{site.data.svbtle.profile_name}}</a>
           </h1>
-          <h2 class="subtitle">{{site.data.svbtle.subtitle}}</h2>
-          <ul class="profile-links">
-            <li class="twitter">
-              <a href="http://twitter.com/{{site.data.svbtle.twitter}}">
-                <span>@{{site.data.svbtle.twitter}}</span>
-              </a>
-            </li>
-            <li class="website">
-              <a href="{{site.data.svbtle.website_url}}">
-                <span>{{site.data.svbtle.website_name}}</span>
-              </a>
-            </li>
-          </ul>
         </header>
       </div>
 
-      <div class="posts-container">
-        <span class="tag read-first is-uppercase">read this first</span>
+      <div class="posts-container detail-view">
         {{content}}
       </div>
+      
+      <div class="line hide-text">Separator line</div>
 
-      <nav class="pagination" style="display: none;">
-        <span class="next">
-          <a href="/page/2" rel="next">Next&nbsp;&nbsp;&nbsp;→</a>
-        </span>
-      </nav>
+      <!-- Next article preview -->
+      <div class="next-article" style="display: none;">
+        <a href="#">
+          <p class="read-next tag is-uppercase">Read this next:</p>
+          <p class="next-article__title">Protocol and Language</p>
+          <div class="next-article__content">
+            <p>This is the second part of my series on protocol. The first part contained a lot of background information, but now we’re ready to get into what Protocol actually is. I live in a pretty unique place, the Farmhouse. It’s a... <span>Continue…</span></p>
+          </div>
+        </a>
+      </div>
+      <!-- Finish / Feature on process-->
 
-      <div class="line"></div>
+      <div class="line hide-text">Separator line</div>
 
       <div class="foot_logo">
         <a href="{{site.data.svbtle.website_url}}"><span class="logo">{{site.data.svbtle.website_url_name}}</span></a>
+      </div>
+
+      <div class="foot_logo right">
+        <a href="/"><span class="link">Full Blog >></span></a>
       </div>
 
       <div class="foot_userbar">

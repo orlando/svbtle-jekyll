@@ -1,13 +1,13 @@
 ---
-subtitle: example subtitle
-profile_url: http://example.com
-profile_name: Example Blog
-website_url: http://example.com
-website_url_text: example
-website_url_about: http://example.com
-website_name: example site name
+subtitle: "Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
+profile_url: http://alexis.duranm.com
+profile_name: Alexis Duran
+website_url: http://fanzy-blog.com
+website_url_text: This is a nice blog with stuff
+website_url_about: http://fanzy-blog.com/about
+website_name: My Fanzy Website
 email_with_subject: mailto:hello@example.com?subject=hi
-twitter: twitter
+twitter: duranmla
 feed_url: http://feedurlhere.com
 typekit_url: typekiturlhere
 ga_account: your-ga-code-here
