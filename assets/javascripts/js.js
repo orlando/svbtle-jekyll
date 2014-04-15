@@ -15,12 +15,6 @@ functions = {
             buttonNav.removeClass('on-mobile');
         }
     },
-
-    appendKudoTo : function (section, kudo) {
-      kudo.render(section); 
-
-      return true;
-    }
 };
 
 $(document).ready(function () {
