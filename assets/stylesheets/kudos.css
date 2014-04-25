@@ -220,10 +220,10 @@
 }
 
 .group .kudo.completed .filling {
-  width: 30%;
-  height: 30%;
-  top: 35%;
-  left: 35%;
+  width: 16px;
+  height: 16px;
+  top: 17px;
+  left: 17px
 }
 
 .group .kudo .txt{
